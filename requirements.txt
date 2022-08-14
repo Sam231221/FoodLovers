@@ -14,4 +14,4 @@ simplejson==3.17.6
 sqlparse==0.4.1
 tzdata==2022.1
 urllib3==1.26.9
-gunicorn
+gunicorn==20.1.0

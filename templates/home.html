@@ -121,8 +121,8 @@
 									<div class="img-holder">
 										<figure>
 											<a href="{% url 'vendor_detail' vendor.vendor_slug %}">
-												{% if vendor.user_profile.profile_picture %}
-												<img src="{{ vendor.user_profile.profile_picture.url }}" class="img-thumb wp-post-image" alt="">
+												{% if vendor.vendor_license %}
+												<img src="{{ vendor.vendor_license.url }}" class="img-thumb wp-post-image" alt="">
 												{% else %}
 												<img src="{% static 'images/default-profile.png' %}" class="img-thumb wp-post-image" alt="">
 												{% endif %}
