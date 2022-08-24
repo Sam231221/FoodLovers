@@ -1,7 +1,7 @@
 You need to install Application Stack Manager  to install Postgis.
 Video Source: https://www.youtube.com/watch?v=tTUM9XfDvqk
 
-Then, 
+Then, type the following command.
 psql
 CREATE DATABASE CMS;
 CREATE USER Sam WITH PASSWORD 'sammer123';
