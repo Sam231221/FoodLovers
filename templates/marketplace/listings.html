@@ -24,23 +24,23 @@
                             <div class="listing simple">
                                 <ul>
                                     {% for vendor in vendors %}
-                                    <li style="line-height: 15px;">
-                                        <div class="img-holder">
-                                            <figure>
-                                                <a href="#">
-                                                    {% if vendor.user_profile.profile_picture %}
-                                                    <img src="{{ vendor.user_profile.profile_picture.url }}" class="img-list wp-post-image" alt="">
-                                                    {% else %}
-                                                    <img src="{% static 'images/default-profile.png' %}" class="img-list wp-post-image" alt="">
-                                                    {% endif %}
-                                                </a>
-                                            </figure>
+                                    <li style="line-height: 15px;" class="d-flex align-items-center">
+                               
+                              
+                                            <a href="#">
+                                                {% if vendor.image %}
+                                                <img src="{{ vendor.image.url }}" class="image-card" alt="">
+                                                {% else %}
+                                                <img src="{% static 'images/placeholder.png' %}" class="image-card" alt="">
+                                                {% endif %}
+                                            </a>
+                              
                                             {% if vendor.is_open %}
                                             <span class="restaurant-status open"><em class="bookmarkRibbon"></em>Open</span>
                                             {% else %}
-                                            <span class="restaurant-status close"><em class="bookmarkRibbon"></em>Close</span>
+                                            <span class="restaurant-status close"><em class="bookmarkRibbon"></em>Closed</span>
                                             {% endif %}
-                                        </div>
+                             
                                         <div class="text-holder">
                                             
                                             <div class="post-title">

@@ -149,17 +149,23 @@
                                                 </span>
                                             </li>
 
+                                            <br>
                                             <!-- Select payment method -->
-                                            <h5>SELECT PAYMENT METHOD</h5>
+                                            <h3>SELECT PAYMENT METHOD</h3>
                                             <div class="payment-method">
                                                 <label>
                                                     <input type="radio" name="payment_method" value="PayPal">
-                                                    <img src="{% static 'images/PayPal.png' %}" alt="PayPal" width="100">
+                                                    <img src="{% static 'images/PayPal.png' %}" alt="PayPal" style="
+                                                    width: 137px; ">
                                                 </label>
                                                 &emsp;
                                                 <label>
                                                     <input type="radio" name="payment_method" value="RazorPay">
-                                                    <img src="{% static 'images/razorpay_logo.png' %}" alt="RazorPay" width="100">
+                                
+                                                    <img  src="{% static 'images/razorpay_logo.png' %}" alt="RazorPay" style="
+                                                    width: 137px;
+                                                    height: 44px;
+                                                ">
                                                 </label>
                                             </div>
                                             <span class="text-danger" id="payment-method-error"></span>

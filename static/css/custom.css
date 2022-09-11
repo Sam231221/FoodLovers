@@ -14,6 +14,12 @@
     z-index: 99;
 }
 
+.image-card{
+    width: 105px;
+    height: 80px;
+    object-fit: contain;
+}
+
 .btn{
     padding: 2px 1.75em;
     font-size: 12px;
