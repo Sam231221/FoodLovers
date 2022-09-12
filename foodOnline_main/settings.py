@@ -185,8 +185,8 @@ if DEBUG == True:
 PAYPAL_CLIENT_ID = 'hjhjk'
 SECURE_CROSS_ORIGIN_OPENER_POLICY = 'same-origin-allow-popups'
 
-RZP_KEY_ID ='gyjgh'
-RZP_KEY_SECRET ='fhfghfg'
+RZP_KEY_ID ='rzp_test_Sqw8uQyAQUjDoN'
+RZP_KEY_SECRET ='5rZcskkAOu7qp6pmKgBw1sFY'
 
 # RZP_KEY_ID = config('RZP_KEY_ID')
 # RZP_KEY_SECRET = config('RZP_KEY_SECRET')
