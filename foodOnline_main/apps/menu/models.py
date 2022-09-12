@@ -1,6 +1,6 @@
 from tabnanny import verbose
 from django.db import models
-from vendor.models import Vendor
+from foodOnline_main.apps.vendor.models import Vendor
 
 
 class Category(models.Model):

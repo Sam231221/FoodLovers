@@ -1,24 +1,21 @@
-from unicodedata import category
-from urllib import response
 from django.http import HttpResponse, JsonResponse
 from django.shortcuts import get_object_or_404, redirect, render
 from django.db import IntegrityError
-
-from menu.forms import CategoryForm, FoodItemForm
-from orders.models import Order, OrderedFood
-import vendor
-from .forms import VendorForm, OpeningHourForm
-from accounts.forms import UserProfileForm
-
-from accounts.models import UserProfile
-from .models import OpeningHour, Vendor
-from django.contrib import messages
-
-from django.contrib.auth.decorators import login_required, user_passes_test
-from accounts.views import check_role_vendor
-from menu.models import Category, FoodItem
 from django.template.defaultfilters import slugify
+from django.contrib import messages
+from django.contrib.auth.decorators import login_required, user_passes_test
 
+
+
+from foodOnline_main.apps.menu.forms import CategoryForm, FoodItemForm
+from foodOnline_main.apps.orders.models import Order, OrderedFood
+from foodOnline_main.apps.accounts.forms import UserProfileForm
+from foodOnline_main.apps.accounts.models import UserProfile
+from foodOnline_main.apps.accounts.views import check_role_vendor
+from foodOnline_main.apps.menu.models import Category, FoodItem
+
+from .forms import VendorForm, OpeningHourForm
+from .models import OpeningHour, Vendor
 
 def get_vendor(request):
     vendor = Vendor.objects.get(user=request.user)

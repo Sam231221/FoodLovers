@@ -1,7 +1,7 @@
 from enum import unique
 from django.db import models
-from accounts.models import User, UserProfile
-from accounts.utils import send_notification
+from foodOnline_main.apps.accounts.models import User, UserProfile
+from foodOnline_main.apps.accounts.utils import send_notification
 from datetime import time, date, datetime
 
 

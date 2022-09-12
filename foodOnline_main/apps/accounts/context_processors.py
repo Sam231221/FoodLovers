@@ -1,6 +1,6 @@
 from urllib.parse import uses_relative
-from accounts.models import UserProfile
-from vendor.models import Vendor
+from .models import UserProfile
+from foodOnline_main.apps.vendor.models import Vendor
 from django.conf import settings
 
 def get_vendor(request):

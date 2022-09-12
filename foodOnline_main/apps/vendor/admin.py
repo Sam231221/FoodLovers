@@ -1,5 +1,5 @@
 from django.contrib import admin
-from vendor.models import Vendor, OpeningHour
+from .models import Vendor, OpeningHour
 
 
 class VendorAdmin(admin.ModelAdmin):

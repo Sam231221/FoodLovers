@@ -1,21 +1,22 @@
 from urllib import response
 from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render, redirect
-from marketplace.models import Cart, Tax
-from marketplace.context_processors import get_cart_amounts
-from menu.models import FoodItem
-from .forms import OrderForm
-from .models import Order, OrderedFood, Payment
-import simplejson as json
-from .utils import generate_order_number, order_total_by_vendor
-from accounts.utils import send_notification
 from django.contrib.auth.decorators import login_required
-import razorpay
-from foodOnline_main.settings import RZP_KEY_ID, RZP_KEY_SECRET
 from django.contrib.sites.shortcuts import get_current_site
 
+from foodOnline_main.apps.marketplace.models import Cart, Tax
+from foodOnline_main.apps.marketplace.context_processors import get_cart_amounts
+from foodOnline_main.apps.menu.models import FoodItem
+from foodOnline_main.apps.accounts.utils import send_notification
+from foodOnline_main.settings import RZP_KEY_ID, RZP_KEY_SECRET
 
 
+from .forms import OrderForm
+from .models import Order, OrderedFood, Payment
+from .utils import generate_order_number, order_total_by_vendor
+
+import simplejson as json
+import razorpay
 client = razorpay.Client(auth=(RZP_KEY_ID, RZP_KEY_SECRET))
 
 
@@ -154,7 +155,7 @@ def payments(request):
 
         # SEND ORDER CONFIRMATION EMAIL TO THE CUSTOMER
         mail_subject = 'Thank you for ordering with us.'
-        mail_template = 'orders/order_confirmation_email.html'
+        mail_template = 'orders/order_confirmation_email.txt'
 
         ordered_food = OrderedFood.objects.filter(order=order)
         customer_subtotal = 0
@@ -164,12 +165,15 @@ def payments(request):
         context = {
             'user': request.user,
             'order': order,
+
+            #used for sending mail to this email of user of payment.
             'to_email': order.email,
             'ordered_food': ordered_food,
             'domain': get_current_site(request),
             'customer_subtotal': customer_subtotal,
             'tax_data': tax_data,
         }
+        print('\n\ncontext:', context)
         send_notification(mail_subject, mail_template, context)
         
 

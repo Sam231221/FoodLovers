@@ -1,7 +1,7 @@
 from django.db import models
 
-from accounts.models import User
-from menu.models import FoodItem
+from foodOnline_main.apps.accounts.models import User
+from foodOnline_main.apps.menu.models import FoodItem
 
 
 class Cart(models.Model):

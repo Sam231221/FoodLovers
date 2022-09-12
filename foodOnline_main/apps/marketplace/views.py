@@ -1,23 +1,21 @@
 from django.http import HttpResponse, JsonResponse
 from django.shortcuts import get_object_or_404, redirect, render
 
-from accounts.models import UserProfile
-from .context_processors import get_cart_counter, get_cart_amounts
-from menu.models import Category, FoodItem
-
-from vendor.models import OpeningHour, Vendor
 from django.db.models import Prefetch
-from .models import Cart
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
-
 from django.contrib.gis.geos import GEOSGeometry
 from django.contrib.gis.measure import D # ``D`` is a shortcut for ``Distance``
 from django.contrib.gis.db.models.functions import Distance
-
 from datetime import date, datetime
-from orders.forms import OrderForm
 
+from .context_processors import get_cart_counter, get_cart_amounts
+from .models import Cart
+from foodOnline_main.apps.accounts.models import UserProfile
+
+from foodOnline_main.apps.menu.models import Category, FoodItem
+from foodOnline_main.apps.orders.forms import OrderForm
+from foodOnline_main.apps.vendor.models import OpeningHour, Vendor
 
 def marketplace(request):
     vendors = Vendor.objects.filter(is_approved=True, user__is_active=True)

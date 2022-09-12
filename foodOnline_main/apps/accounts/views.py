@@ -4,19 +4,22 @@ from django.core.mail import message
 from django.http.response import HttpResponse
 from django.shortcuts import redirect, render
 from django.utils.http import urlsafe_base64_decode
+from django.template.defaultfilters import slugify
+from django.contrib import messages, auth
+from django.contrib.auth.decorators import login_required, user_passes_test
+from django.core.exceptions import PermissionDenied
+import datetime
 
-from vendor.forms import VendorForm
+from foodOnline_main.apps.vendor.forms import VendorForm
+from foodOnline_main.apps.vendor.models import Vendor
+from foodOnline_main.apps.orders.models import Order
+
 from .forms import UserForm
 from .models import User, UserProfile
-from django.contrib import messages, auth
 from .utils import detectUser, send_verification_email
-from django.contrib.auth.decorators import login_required, user_passes_test
 
-from django.core.exceptions import PermissionDenied
-from vendor.models import Vendor
-from django.template.defaultfilters import slugify
-from orders.models import Order
-import datetime
+
+
 
 
 # Restrict the vendor from accessing the customer page

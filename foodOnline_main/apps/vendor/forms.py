@@ -1,6 +1,6 @@
 from django import forms
 from .models import Vendor, OpeningHour
-from accounts.validators import allow_only_images_validator
+from foodOnline_main.apps.accounts.validators import allow_only_images_validator
 
 
 class VendorForm(forms.ModelForm):

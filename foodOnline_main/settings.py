@@ -41,13 +41,14 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'accounts',
-    'vendor',
-    'menu',
-    'marketplace',
-    'django.contrib.gis',
-    'customers',
-    'orders',
+    'foodOnline_main.apps.accounts',
+    'foodOnline_main.apps.vendor',
+    'foodOnline_main.apps.menu',
+    'foodOnline_main.apps.marketplace',
+    'foodOnline_main.apps.customers',
+    'foodOnline_main.apps.orders',
+
+     'django.contrib.gis',
 ]
 
 MIDDLEWARE = [
@@ -58,7 +59,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'orders.request_object.RequestObjectMiddleware', # custom middleware created to access the request object in models.py
+    'foodOnline_main.apps.orders.request_object.RequestObjectMiddleware', # custom middleware created to access the request object in models.py
 ]
 
 ROOT_URLCONF = 'foodOnline_main.urls'
@@ -74,12 +75,12 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'accounts.context_processors.get_vendor',
-                'accounts.context_processors.get_google_api',
-                'marketplace.context_processors.get_cart_counter',
-                'marketplace.context_processors.get_cart_amounts',
-                'accounts.context_processors.get_user_profile',
-                'accounts.context_processors.get_paypal_client_id',
+                'foodOnline_main.apps.accounts.context_processors.get_vendor',
+                'foodOnline_main.apps.accounts.context_processors.get_google_api',
+                'foodOnline_main.apps.marketplace.context_processors.get_cart_counter',
+                'foodOnline_main.apps.marketplace.context_processors.get_cart_amounts',
+                'foodOnline_main.apps.accounts.context_processors.get_user_profile',
+                'foodOnline_main.apps.accounts.context_processors.get_paypal_client_id',
             ],
         },
     },
@@ -163,26 +164,30 @@ MESSAGE_TAGS = {
 }
 
 # Email configuration
-EMAIL_HOST ='fghbfgh'
-EMAIL_PORT = 9000
-EMAIL_HOST_USER = 'fgjgf'
-EMAIL_HOST_PASSWORD = 'ghjhgjg'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+
 # EMAIL_HOST = config('EMAIL_HOST')
 # EMAIL_PORT = config('EMAIL_PORT', cast=int)
 # EMAIL_HOST_USER = config('EMAIL_HOST_USER')
 # EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
-EMAIL_USE_TLS = True
-DEFAULT_FROM_EMAIL = 'foodOnline Marketplace <django.foodonline@gmail.com>'
+
+EMAIL_HOST_USER = 'dimensionalassistanceteam37@gmail.com'
+EMAIL_HOST_PASSWORD = 'oosjiknoggtolzwg'
+
+DEFAULT_FROM_EMAIL = 'dimensionalassistanceteam37@gmail.com'
 
 GOOGLE_API_KEY = 'tjghj'
 
 if DEBUG == True:
-    os.environ['PATH'] = os.path.join(BASE_DIR, 'env\Lib\site-packages\osgeo') + ';' + os.environ['PATH']
-    os.environ['PROJ_LIB'] = os.path.join(BASE_DIR, 'env\Lib\site-packages\osgeo\data\proj') + ';' + os.environ['PATH']
-    GDAL_LIBRARY_PATH = os.path.join(BASE_DIR, 'env\Lib\site-packages\osgeo\gdal304.dll')
+    os.environ['PATH'] = os.path.join(BASE_DIR, 'ZFLVirtual\Lib\site-packages\osgeo') + ';' + os.environ['PATH']
+    os.environ['PROJ_LIB'] = os.path.join(BASE_DIR, 'ZFLVirtual\Lib\site-packages\osgeo\data\proj') + ';' + os.environ['PATH']
+    GDAL_LIBRARY_PATH = os.path.join(BASE_DIR, 'ZFLVirtual\Lib\site-packages\osgeo\gdal304.dll')
 
 # PAYPAL_CLIENT_ID = config('PAYPAL_CLIENT_ID')
-PAYPAL_CLIENT_ID = 'hjhjk'
+PAYPAL_CLIENT_ID = 'ARLg-N4mnhTcqgxcZFLabZOvJO0E__pis3Zy-cE3I5ts9lazsizJ8WIqHUrGEfjqF0gvK0KINseoItnW'
 SECURE_CROSS_ORIGIN_OPENER_POLICY = 'same-origin-allow-popups'
 
 RZP_KEY_ID ='rzp_test_Sqw8uQyAQUjDoN'
