@@ -13,14 +13,12 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 from decouple import config
 import os
-from django import conf
+from foodOnline_main.environs import Env
+env = Env()
+env.read_env()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
-
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = config('SECRET_KEY')
@@ -28,11 +26,10 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', cast=bool)
 
-ALLOWED_HOSTS = ['194.195.118.42', '127.0.0.1', 'djangofoodonline.com', 'www.djangofoodonline.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1',]
 
 
 # Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -48,8 +45,9 @@ INSTALLED_APPS = [
     'foodOnline_main.apps.customers',
     'foodOnline_main.apps.orders',
 
-     'django.contrib.gis',
+    'django.contrib.gis',
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -91,15 +89,13 @@ WSGI_APPLICATION = 'foodOnline_main.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-
 DATABASES = {
     'default': {
-        # 'ENGINE': 'django.db.backends.postgresql',
-        'ENGINE': 'django.contrib.gis.db.backends.postgis',
-        'NAME': 'FoodOnlineDeliverySystem',
-        'USER': 'postgres',
-        'PASSWORD': 'ProgrammerGodRobo123',
-        'HOST': 'localhost',
+        'ENGINE': env.str('DATABASE_ENGINE'),
+        'NAME': env.str('DATABASE_NAME'),
+        'USER': env.str('DATABASE_USER'),
+        'PASSWORD': env.str('DATABASE_PASSWORD'),
+        'HOST': env.str('DATABASE_HOST'),
     }
 }
 
@@ -163,23 +159,18 @@ MESSAGE_TAGS = {
     messages.ERROR: 'danger',
 }
 
-# Email configuration
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_USE_TLS = True
-EMAIL_PORT = 587
+EMAIL_BACKEND =env.str('EMAIL_BACKEND')
+EMAIL_HOST = env.str('EMAIL_HOST')
+EMAIL_USE_TLS=env.str('EMAIL_USE_TLS')
+EMAIL_PORT = env.str('EMAIL_PORT', cast=int)
 
-# EMAIL_HOST = config('EMAIL_HOST')
-# EMAIL_PORT = config('EMAIL_PORT', cast=int)
-# EMAIL_HOST_USER = config('EMAIL_HOST_USER')
-# EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
+EMAIL_HOST_USER = env.str('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = env.str('EMAIL_HOST_PASSWORD')
+DEFAULT_FROM_EMAIL=env.str('DEFAULT_FROM_EMAIl')
 
-EMAIL_HOST_USER = 'dimensionalassistanceteam37@gmail.com'
-EMAIL_HOST_PASSWORD = 'oosjiknoggtolzwg'
 
-DEFAULT_FROM_EMAIL = 'dimensionalassistanceteam37@gmail.com'
+GOOGLE_API_KEY = 'AIzaSyCFt-3XoQ68P3R5631hUs0AhyuPKlWm0gY'
 
-GOOGLE_API_KEY = 'tjghj'
 
 if DEBUG == True:
     os.environ['PATH'] = os.path.join(BASE_DIR, 'ZFLVirtual\Lib\site-packages\osgeo') + ';' + os.environ['PATH']
@@ -187,11 +178,10 @@ if DEBUG == True:
     GDAL_LIBRARY_PATH = os.path.join(BASE_DIR, 'ZFLVirtual\Lib\site-packages\osgeo\gdal304.dll')
 
 # PAYPAL_CLIENT_ID = config('PAYPAL_CLIENT_ID')
-PAYPAL_CLIENT_ID = 'ARLg-N4mnhTcqgxcZFLabZOvJO0E__pis3Zy-cE3I5ts9lazsizJ8WIqHUrGEfjqF0gvK0KINseoItnW'
+PAYPAL_CLIENT_ID = env.str('PAYPAL_CLIENT_ID')
 SECURE_CROSS_ORIGIN_OPENER_POLICY = 'same-origin-allow-popups'
 
-RZP_KEY_ID ='rzp_test_Sqw8uQyAQUjDoN'
-RZP_KEY_SECRET ='5rZcskkAOu7qp6pmKgBw1sFY'
-
-# RZP_KEY_ID = config('RZP_KEY_ID')
-# RZP_KEY_SECRET = config('RZP_KEY_SECRET')
+# RZP_KEY_ID ='rzp_test_Sqw8uQyAQUjDoN'
+# RZP_KEY_SECRET ='5rZcskkAOu7qp6pmKgBw1sFY'
+RZP_KEY_ID = env.str('RZP_KEY_ID')
+RZP_KEY_SECRET = env.str('RZP_KEY_SECRET')

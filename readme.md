@@ -32,3 +32,9 @@ v. CREATE EXTENSION postgis;
    This last query does the thing.
 
 PostGIS is a spatial database extender for PostgreSQL object-relational database. It adds support for geographic objects allowing location queries to be run in SQL
+
+
+
+# Understanding Two Types oF model
+  Customer -> Only pays for food.
+  Vendor -> Have a Restaurant and manages items, categories and also can buy food.

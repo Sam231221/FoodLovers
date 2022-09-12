@@ -53,7 +53,7 @@ def vprofile(request):
 
 
 @login_required(login_url='login')
-@user_passes_test(check_role_vendor)
+# @user_passes_test(check_role_vendor)
 def menu_builder(request):
     vendor = get_vendor(request)
     categories = Category.objects.filter(vendor=vendor).order_by('created_at')

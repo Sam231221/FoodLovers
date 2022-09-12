@@ -22,6 +22,7 @@ client = razorpay.Client(auth=(RZP_KEY_ID, RZP_KEY_SECRET))
 
 
 @login_required(login_url='login')
+#Set Ordrer Instance accorfing to Cart Model Items.
 def place_order(request):
     cart_items = Cart.objects.filter(user=request.user).order_by('created_at')
     cart_count = cart_items.count()
@@ -33,6 +34,7 @@ def place_order(request):
         if i.fooditem.vendor.id not in vendors_ids:
             vendors_ids.append(i.fooditem.vendor.id)
     
+    print('updated cart_items:', cart_items)
     # {"vendor_id":{"subtotal":{"tax_type": {"tax_percentage": "tax_amount"}}}}
     get_tax = Tax.objects.filter(is_active=True)
     subtotal = 0
@@ -116,6 +118,7 @@ def place_order(request):
 
 
 @login_required(login_url='login')
+#Handling Payment
 def payments(request):
         # Check if the request is ajax or not
     if request.headers.get('x-requested-with') == 'XMLHttpRequest' and request.method == 'POST':
@@ -140,7 +143,7 @@ def payments(request):
         order.is_ordered = True
         order.save()
 
-        # MOVE THE CART ITEMS TO ORDERED FOOD MODEL
+        # SET THE ORDER() ITEMS TO OrderedFood() INSTANCE
         cart_items = Cart.objects.filter(user=request.user)
         for item in cart_items:
             ordered_food = OrderedFood()
@@ -200,17 +203,19 @@ def payments(request):
                 send_notification(mail_subject, mail_template, context)
 
         # CLEAR THE CART IF THE PAYMENT IS SUCCESS
-        # cart_items.delete() 
+        cart_items.delete() 
 
         # RETURN BACK TO AJAX WITH THE STATUS SUCCESS OR FAILURE
         response = {
             'order_number': order_number,
             'transaction_id': transaction_id,
+            'cartitems': 0,
         }
         return JsonResponse(response)
+    
     return HttpResponse('Payments view')
 
-
+@login_required(login_url='login')
 def order_complete(request):
     order_number = request.GET.get('order_no')
     transaction_id = request.GET.get('trans_id')

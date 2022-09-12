@@ -24,18 +24,22 @@ from foodOnline_main.apps.marketplace import views as MarketplaceViews
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
-    path('', include('foodOnline_main.apps.accounts.urls')),
+    path('account/', include('foodOnline_main.apps.accounts.urls')),
+   
+    #For Business Restaurant Owner
+    path('vendor/', include('foodOnline_main.apps.vendor.urls')),
+    
+    #For Customer 
+    path('customer/', include('foodOnline_main.apps.customers.urls')),
+    
+    #MarketPlace with Cart Products
     path('marketplace/', include('foodOnline_main.apps.marketplace.urls')),
-
-    # CART
     path('cart/', MarketplaceViews.cart, name='cart'),
-    # SEARCH
     path('search/', MarketplaceViews.search, name='search'),
-
-    # CHECKOUT
+    
     path('checkout/', MarketplaceViews.checkout, name='checkout'),
 
-    # ORDERS
+    # ORDERING- Placing order, payment and order success.
     path('orders/', include('foodOnline_main.apps.orders.urls')),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

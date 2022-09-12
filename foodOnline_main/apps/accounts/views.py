@@ -1,7 +1,7 @@
 from datetime import datetime
 from django.contrib.auth.tokens import default_token_generator
 from django.core.mail import message
-from django.http.response import HttpResponse
+from django.http.response import HttpResponseRedirect
 from django.shortcuts import redirect, render
 from django.utils.http import urlsafe_base64_decode
 from django.template.defaultfilters import slugify
@@ -20,8 +20,6 @@ from .utils import detectUser, send_verification_email
 
 
 
-
-
 # Restrict the vendor from accessing the customer page
 def check_role_vendor(user):
     if user.role == 1:
@@ -33,8 +31,10 @@ def check_role_vendor(user):
 # Restrict the customer from accessing the vendor page
 def check_role_customer(user):
     if user.role == 2:
+        print('d:', user.role)
         return True
     else:
+        print('\n\nd:', user.role)
         raise PermissionDenied
 
 
@@ -147,26 +147,25 @@ def activate(request, uidb64, token):
 def login(request):
     if request.user.is_authenticated:
         messages.warning(request, 'You are already logged in!')
-        return redirect('myAccount')
+        return HttpResponseRedirect(request.META["HTTP_REFERER"])
     elif request.method == 'POST':
         email = request.POST['email']
         password = request.POST['password']
-
         user = auth.authenticate(email=email, password=password)
 
         if user is not None:
             auth.login(request, user)
             messages.success(request, 'You are now logged in.')
-            return redirect('myAccount')
+            return HttpResponseRedirect(request.META["HTTP_REFERER"])
         else:
             messages.error(request, 'Invalid login credentials')
-            return redirect('login')
+            return HttpResponseRedirect(request.META["HTTP_REFERER"])
     return render(request, 'accounts/login.html')
 
 def logout(request):
     auth.logout(request)
     messages.info(request, 'You are logged out.')
-    return redirect('login')
+    return HttpResponseRedirect(request.META["HTTP_REFERER"])
 
 
 @login_required(login_url='login')
@@ -177,8 +176,8 @@ def myAccount(request):
 
 
 @login_required(login_url='login')
-@user_passes_test(check_role_customer)
-def custDashboard(request):
+# @user_passes_test(check_role_customer)
+def customerDashboard(request):
     orders = Order.objects.filter(user=request.user, is_ordered=True)
     recent_orders = orders[:5]
     context = {
@@ -190,7 +189,7 @@ def custDashboard(request):
 
 
 @login_required(login_url='login')
-@user_passes_test(check_role_vendor)
+# @user_passes_test(check_role_vendor)
 def vendorDashboard(request):
     vendor = Vendor.objects.get(user=request.user)
     orders = Order.objects.filter(vendors__in=[vendor.id], is_ordered=True).order_by('created_at')

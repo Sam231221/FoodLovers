@@ -3,14 +3,15 @@ from . import views
 
 
 urlpatterns = [
-    path('', views.myAccount),
+     path('', views.myAccount, name='myAccount'),
+
     path('registerUser/', views.registerUser, name='registerUser'),
     path('registerVendor/', views.registerVendor, name='registerVendor'),
 
     path('login/', views.login, name='login'),
     path('logout/', views.logout, name='logout'),
-    path('myAccount/', views.myAccount, name='myAccount'),
-    path('custDashboard/', views.custDashboard, name='custDashboard'),
+   
+    path('custDashboard/', views.customerDashboard, name='custDashboard'),
     path('vendorDashboard/', views.vendorDashboard, name='vendorDashboard'),
 
     path('activate/<uidb64>/<token>/', views.activate, name='activate'),
@@ -19,7 +20,6 @@ urlpatterns = [
     path('reset_password_validate/<uidb64>/<token>/', views.reset_password_validate, name='reset_password_validate'),
     path('reset_password/', views.reset_password, name='reset_password'),
 
-    path('vendor/', include('foodOnline_main.apps.vendor.urls')),
-    path('customer/', include('foodOnline_main.apps.customers.urls')),
+  
 
 ]

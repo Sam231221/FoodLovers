@@ -139,9 +139,11 @@ def search(request):
     if not 'address' in request.GET:
         return redirect('marketplace')
     else:
-        address = request.GET['address']
+        
         latitude = request.GET['lat']
         longitude = request.GET['lng']
+
+        address = request.GET['address']
         radius = request.GET['radius']
         keyword = request.GET['keyword']
 
