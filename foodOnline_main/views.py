@@ -24,6 +24,7 @@ def get_or_set_current_location(request):
 
 
 def home(request):
+    popularvendors= Vendor.objects.filter(is_featured=True)
     if get_or_set_current_location(request) is not None:
 
         pnt = GEOSGeometry('POINT(%s %s)' % (get_or_set_current_location(request)))
@@ -36,5 +37,6 @@ def home(request):
         vendors = Vendor.objects.filter(is_approved=True, user__is_active=True)[:8]
     context = {
         'vendors': vendors,
+        'popularvendors': popularvendors,
     }
     return render(request, 'home.html', context)

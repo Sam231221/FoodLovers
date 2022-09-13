@@ -7,11 +7,11 @@
         <div class="main-header">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                         <div class="logo">
                             <figure>
                                 <a href="{% url 'home' %}" class="light-logo">
-                                    <img src="{% static 'logo/foodOnlineLogo.png' %}" alt="FoodOnline" width="250">
+                                    <img src="{% static 'logo/foodOnlineLogo.png' %}" alt="FoodOnline" style="max-width:250px;">
                                 </a>
                             </figure>
                         </div>
@@ -29,7 +29,7 @@
                             </ul>
                             </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 d-flex align-items-center justify-content-end">
                         <div class="login-option">
                             {% if user.is_authenticated %}
                             <a href="{% url 'cart' %}">

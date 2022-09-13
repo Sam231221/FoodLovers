@@ -1,6 +1,6 @@
 .main-header .login-option { float: right; text-align: right; }
 .main-header .login-option a { outline: none; text-decoration: none; }
-.main-header .login-option a.login-popup { color: #333; font-size: 13px; font-weight: 700; margin: 0 0 0 15px; text-transform: uppercase; display: inline-block; margin-top: 22px; }
+.main-header .login-option a.login-popup { color: #333; font-size: 13px; font-weight: 700; margin: 0 0 0 15px; text-transform: uppercase; display: inline-block; }
 .main-header .login-option a.get-start-btn { background-color: #c33332; border-radius: 3px; color: #fff; font-family: "Montserrat", sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0; line-height: normal; padding: 10px 15px; text-transform: uppercase; margin: 0 0 0 12px; }
 .modal-dialog { width: 400px; }
 #header.classic .main-header { padding-top: 15px; }
@@ -172,7 +172,14 @@
 .main-search.fancy .field-holder ul { margin-bottom: 0; }
 .main-search.fancy .field-holder .chosen-container-single .chosen-single { padding: 10px 15px; border-radius: inherit; height: 50px; line-height: 50px; background-color: #fff; }
 .main-search.fancy .field-holder input[type="text"] { text-transform: uppercase; margin: 0; padding: 0 15px; border-radius: inherit; height: 50px; line-height: 50px; color: #d1d1d1; font-size: 12px; }
-.main-search.fancy .field-holder input[type="submit"] { margin: 0; padding: 10px 15px; border-radius: inherit; border: none; -webkit-box-shadow: none; box-shadow: none; width: 100%; height: 50px; line-height: 30px; font-size: 18px; letter-spacing: 1px; text-transform: uppercase; background-color: #4cce4a; color: #fff; }
+.main-search.fancy .field-holder input[type="submit"] {
+   margin: 0; padding: 10px 15px; border-radius: inherit; 
+   border: none; -webkit-box-shadow: none; box-shadow: none; 
+   width: 100%; height: 50px; line-height: 30px; font-size: 18px;
+    letter-spacing: 1px; text-transform: uppercase; 
+    background-color: #101010; transition: .9s all ease-in-out;
+  color: #fff; }
+
 .main-search.fancy .field-holder .chosen-container-single .chosen-single:before { position: absolute; color: #d1d1d1; font-size: 18px; top: 25px; right: 13px; content: '\e95a'; font-family: icomoon; }
 .main-search.fancy .chosen-container-single .chosen-single span { left: 0; line-height: 30px; color: #d1d1d1; font-size: 12px; }
 .main-search.fancy .chosen-container .chosen-results { padding: 0; margin: 0; }
@@ -237,36 +244,7 @@
 .listing-filter .cuisines-holder .filter-list li:nth-child(1), .listing-filter .cuisines-holder .filter-list li:nth-child(2), .listing-filter .cuisines-holder .filter-list li:nth-child(3), .listing-filter .cuisines-holder .filter-list li:nth-child(4), .listing-filter .cuisines-holder .filter-list li:nth-child(5), .listing-filter .cuisines-holder .filter-list li.expand { display: block; }
 .listing-filter ul li .checkbox span { position: absolute; top: 50%; right: 0; -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); margin-top: -2px; }
 .restaurant-filters-ads .foodbakery_banner_section img { width: 100%; }
-/* .company-logo Start */
-.company-logo { margin: 0; }
-.company-logo .element-title.align-left { text-align: left; }
-.company-logo .element-title { margin: 0 0 22px 0; }
-.company-logo .element-title h3 { color: #333; margin: 0 0 3px 0; letter-spacing: 0; text-transform: none; }
-.company-logo .element-title p { color: #bbb; letter-spacing: 0.5px; word-spacing: 1px; }
-.company-logo ul { margin: 0 -10px; padding: 0; text-align: left; }
-.company-logo ul li { list-style: none; display: inline-block; margin: 0 -4px 0 0; vertical-align: top; width: 12.5%; padding: 0 10px; position: relative; }
-.company-logo ul li:after { clear: both; content: ''; display: block; }
-.company-logo ul li:last-child figure { margin: 0; }
-.company-logo ul li.has-border figure { border: 1px solid #e5e4e3; text-align: center; }
-.company-logo ul li figure { -webkit-box-shadow: none; box-shadow: none; outline: none; border: 0; margin: 0 0 15px 0; }
-.company-logo ul li figure a { text-decoration: none; -webkit-box-shadow: none; box-shadow: none; outline: none; border: 0; display: block; }
-.company-logo ul li figure a img { display: block; max-width: 100%; }
-.company-logo ul li figure a img.img-list { display: none; }
-.company-logo ul li.has-border { width: 145px; }
-.company-logo ul li.has-border figure { height: 125px; position: relative; }
-.company-logo ul li.has-border figure img { position: absolute; top: 50%; -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); }
-.company-logo.fancy ul { text-align: center; }
-.company-logo.fancy ul li { width: 18%; }
-.main-post .media-holder.center { margin: 0 auto; text-align: center; }
-.main-post .media-holder.center figure img { width: auto; display: inline-block; }
-@media (min-width: 992px) { .company-logo.listing-grid-sidebar ul li { width: 20%; } }
-.company-logo.simple { background-color: transparent; margin: 0; padding: 0 10px; }
-.company-logo.simple ul { padding: 0; margin: 0 -10px; vertical-align: middle; text-align: center; }
-.company-logo.simple ul li { margin: 0 -4px 10px 0; }
-.company-logo.simple ul li:last-child figure { margin-right: 0; }
-.company-logo.simple ul li figure { -webkit-box-shadow: none; box-shadow: none; outline: none; border: 0; padding: 0; margin: 0; height: auto; }
-.company-logo.simple ul li figure a { text-decoration: none; -webkit-box-shadow: none; box-shadow: none; outline: none; border: 0; display: block; }
-.company-logo.simple ul li figure a img { width: auto; }
+
 /* company-logo End */
 /* Listing Fancy Filter style  */
 .listing.fancy .element-title.align-center { text-align: center; }
@@ -1989,7 +1967,7 @@ div.daterangepicker { border: 1px solid #eceef4; -webkit-box-shadow: none; box-s
 .wp-foodbakery .listing.grid-slider .rating-star .rating-box:before, .location-holder.modern a.more-btn, .grid-slider .swiper-button-prev:hover i, .grid-slider .swiper-button-next:hover i,
 .company-holder.simple .company-logo .text-holder .post-title h6 a:hover
 {
-color:#c33332 !important;
+color:#600000 !important;
 }
 .bgcolor, .chosen-container .chosen-results li.highlighted, .order-sort-results ul li:hover:before, .bootstrap-datetimepicker-widget .btn-primary, 
 .booking-info-sec .contact-info .field-holder .submit-btn input[type="submit"], .user-order input[type="submit"], .main-post .column-text form .field-holder .field-btn, 
@@ -2016,11 +1994,7 @@ background:#ebedf3 !important;	    }
 .cs-main-nav {
 position: relative !important;
 }
-body,
-.main-section p,
-.mce-content-body p
-{
-font:Normal  14px/24px "Open Sans", sans-serif;letter-spacing: 0px;text-transform: none;color: #515151 !important;	    }
+
 header .logo {
 margin-top:0px;
 margin-right:0px;
@@ -2031,18 +2005,10 @@ margin-left:0px;
 #header .navigation > ul > li
 {
 font:800 Normal  13px/19px "Open Sans", sans-serif !important;text-transform: uppercase !important;	    }
-h1, h1 a{
-font:700 Normal  30px/36px "Montserrat", sans-serif !important;letter-spacing: 1px !important;text-transform: capitalize !important;color: #000000 !important;}
-h2, h2 a{
-font:700 Normal  24px/30px "Montserrat", sans-serif !important;letter-spacing: 1px !important;text-transform: capitalize !important;color: #000000 !important;	    }
-h3, h3 a{ 
-font:700 Normal  20px/26px "Montserrat", sans-serif !important;letter-spacing: 1px !important;text-transform: capitalize !important;color: #000000 !important;	    }
-h4, h4 a{
-font:700 Normal  18px/24px "Montserrat", sans-serif !important;letter-spacing: 1px !important;text-transform: capitalize !important;color: #000000 !important;	    }
-h5, h5 a{
-font:700 Normal  16px/22px "Montserrat", sans-serif !important;letter-spacing: 0px !important;text-transform: capitalize !important;color: #000000 !important;	    }
-h6, h6 a{
-font:700 Normal  14px/20px "Montserrat", sans-serif !important;letter-spacing: 1px !important;text-transform: capitalize !important;color: #000000 !important;	    }
+
+
+
+
 .cs-section-title h2{
 font:700 Normal  18px/26px "Montserrat", sans-serif !important;letter-spacing: 1px !important;text-transform: capitalize !important;color: #000000 !important;	    }
 .post-title h3 a{

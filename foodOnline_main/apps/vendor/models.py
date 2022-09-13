@@ -12,6 +12,7 @@ class Vendor(models.Model):
     vendor_slug = models.SlugField(max_length=100, unique=True)
     image = models.ImageField(null=True,upload_to='vendor/images/')
     is_approved = models.BooleanField(default=False)
+    is_featured = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now_add=True)
     modified_at = models.DateTimeField(auto_now=True)
 
