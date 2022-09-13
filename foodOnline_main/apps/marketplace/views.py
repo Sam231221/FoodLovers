@@ -136,16 +136,17 @@ def delete_cart(request, cart_id):
 
 
 def search(request):
+    print(request.GET.get('address'))
     if not 'address' in request.GET:
         return redirect('marketplace')
     else:
-        
         latitude = request.GET['lat']
         longitude = request.GET['lng']
 
         address = request.GET['address']
         radius = request.GET['radius']
         keyword = request.GET['keyword']
+        print(latitude, longitude, address, radius, keyword)
 
         # get vendor ids that has the food item the user is looking for
         fetch_vendors_by_fooditems = FoodItem.objects.filter(food_title__icontains=keyword, is_available=True).values_list('vendor', flat=True)
