@@ -65,7 +65,7 @@
 								</div>
 							</div>
 						</form>
-						
+
 					</div>
 				</div>
 				
@@ -82,8 +82,8 @@
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 					<div class="element-title align-left">
-						<h2>Explore Restaurants</h2>
-						<p>Explore restaurants, bars, and cafés by locality</p>
+						<h2>Nearby Restaurants</h2>
+						<p>Explore Restaurants, bars, and cafés by locality</p>
 					</div>
 				</div>
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding-right: 0 !important; padding-left: 0 !important;">
@@ -147,7 +147,7 @@
 									<div class="img-holder">
 										<figure>
 											<a href="{% url 'vendor_detail' vendor.vendor_slug %}">
-												{% if vendor.vendor_license %}
+												{% if vendor.image %}
 												<img src="{{ vendor.image.url }}" class="img-thumb wp-post-image" alt="">
 												{% else %}
 												<img src="{% static 'images/placeholder.png' %}" class="img-thumb wp-post-image" alt="">
