@@ -1,6 +1,7 @@
 let autocomplete;
 
 function initAutoComplete(){
+    //location search in home page
 autocomplete = new google.maps.places.Autocomplete(
     document.getElementById('id_address'),
     {

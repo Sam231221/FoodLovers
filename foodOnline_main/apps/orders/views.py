@@ -189,7 +189,7 @@ def payments(request):
                 to_emails.append(i.fooditem.vendor.user.email)
 
                 ordered_food_to_vendor = OrderedFood.objects.filter(order=order, fooditem__vendor=i.fooditem.vendor)
-                print(ordered_food_to_vendor)
+                print('\nOrderd Food:',ordered_food_to_vendor)
 
         
                 context = {

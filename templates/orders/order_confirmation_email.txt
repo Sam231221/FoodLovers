@@ -30,7 +30,7 @@
   <table role="presentation" width="100%">
     <tr>
     <td  align="center" style="color: white;">
-     <img alt="Logo" src="https://rathank.com/foodonline/logo/logo.png" width="400px" align="middle">
+     <img alt="Logo" src="https://res.cloudinary.com/dcgrv6shk/image/upload/v1663064734/foodLoversLogo_apjtmx.png" width="400px" align="middle">
       </td>
   </table>
 
@@ -66,7 +66,7 @@
             <th>Price</th>
         </tr>
 
-        {% for food in ordered_food %}
+        {% for food in ordered_food_to_vendor %}
         <tr>
             <td><img src="http://{{domain}}{{ food.fooditem.image.url }}" alt="Food Image" width="60"></td>
             <td><p style="margin: 0;">{{ food.fooditem }}</p>

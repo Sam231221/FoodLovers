@@ -14,7 +14,7 @@
                             <li class="active"><a data-toggle="tab" href="#home"><i class="fa fa-shopping-cart text-danger"></i>Billing Address</a></li>
                             
                         </ul>
-                        <div class="tab-content">
+                        <div class="tab-content shadow-sm">
                             <div id="home" class="tab-pane in active">
                                 <div class="menu-itam-holder">
                                     
@@ -86,7 +86,7 @@
                             <li class="active"><a data-toggle="tab" href="#home"><i class="icon- icon-room_service"></i>Your Order</a></li>
                             
                         </ul>
-                        <div class="tab-content">
+                        <div class="tab-content shadow-sm">
                             <div id="home" class="tab-pane in active">
                                 <div class="menu-itam-holder">
 
@@ -97,14 +97,16 @@
                                                 {% for item in cart_items %}
                                                 <li id="cart-item-{{item.id}}">
                                                     <div class="image-holder"> <img src="{{ item.fooditem.image.url }}" alt=""></div>
-                                                    <div class="text-holder">
-                                                        <h6>{{ item.fooditem }}</h6>
-                                                        <span>{{ item.fooditem.description }}</span>
-                                                        <a href="{% url 'vendor_detail' item.fooditem.vendor.vendor_slug %}" class="badge badge-warning">{{ item.fooditem.vendor }}</a>
+                                                    <div class="text-holder mt-2">
+                                                        <h6><strong>{{ item.fooditem }}</strong></h6>
+                                                        <div class="mx-2">
+                                                            <span>{{ item.quantity }} X QTY</span>
+                                                            <a href="{% url 'vendor_detail' item.fooditem.vendor.vendor_slug %}" class="badge badge-warning">{{ item.fooditem.vendor }}</a>
+                                                        </div>
                                                     </div>
 
-                                                    <div class="quantity" style="display: inline-block; position: absolute; top: 50%; transform: translateY(-50%); margin-top: -10px;">
-                                                        <span>{{ item.quantity }} QTY</span>
+                                                    <div class="quantity" style="">
+                                                        
                                                     </div>
                                                     <div class="price-holder">
                                                         <span class="price">${{ item.fooditem.price }}</span>
@@ -117,7 +119,7 @@
                                         
                                         
                                     </div>
-                                    
+                                    <hr>
                                     <div>
                                         <ul>
                                             <li style="list-style-type: none;">
@@ -148,8 +150,7 @@
                                                     <span id="total">{{ grand_total }}</span>
                                                 </span>
                                             </li>
-
-                                            <br>
+<hr>
                                             <!-- Select payment method -->
                                             <strong>SELECT PAYMENT METHOD</strong>
                                             <br>
