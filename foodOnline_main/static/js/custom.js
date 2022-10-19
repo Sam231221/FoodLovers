@@ -89,7 +89,7 @@ $(document).ready(function(){
                 console.log(response)
                 if(response.status == 'login_required'){
                     swal(response.message, '', 'info').then(function(){
-                        window.location = '/login';
+                        window.location = '/account/login';
                     })
                 }else if(response.status == 'Failed'){
                     swal(response.message, '', 'error')
