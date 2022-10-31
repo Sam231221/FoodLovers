@@ -1,0 +1,20 @@
+{
+    "buildpacks": [
+      {
+        "url": "https://github.com/heroku/heroku-geo-buildpack.git"
+      },
+      {
+        "url": "heroku/python"
+      }
+    ],
+    "environments": {
+      "test": {
+        "scripts": {
+          "test": "python3 manage.py migrate --noinput && python3 manage.py test --keepdb"
+        },
+        "env": {
+          "DJANGO_DEBUG": "1"
+        }
+      }
+    }
+  }
