@@ -183,7 +183,4 @@ if DEBUG == True:
 PAYPAL_CLIENT_ID = env.str('PAYPAL_CLIENT_ID')
 SECURE_CROSS_ORIGIN_OPENER_POLICY = 'same-origin-allow-popups'
 
-# RZP_KEY_ID ='rzp_test_Sqw8uQyAQUjDoN'
-# RZP_KEY_SECRET ='5rZcskkAOu7qp6pmKgBw1sFY'
-RZP_KEY_ID = env.str('RZP_KEY_ID')
-RZP_KEY_SECRET = env.str('RZP_KEY_SECRET')
+
