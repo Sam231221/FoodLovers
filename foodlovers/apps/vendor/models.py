@@ -6,10 +6,17 @@ from foodlovers.apps.accounts.utils import send_notification
 from datetime import time, date, datetime
 
 
+class Address(models.Model):
+    name = models.CharField(max_length=100, null=True)
+
+    def __str__(self) -> str:
+        return f"{self.name}"
+
 class Vendor(models.Model):
     user = models.OneToOneField(User, related_name='user', on_delete=models.CASCADE)
     user_profile = models.OneToOneField(UserProfile, related_name='userprofile', on_delete=models.CASCADE)
-    vendor_name = models.CharField(max_length=50)
+    vendor_name = models.CharField(max_length=50, null=True)
+    address = models.OneToOneField(Address, on_delete=models.SET_NULL, null=True)
     vendor_slug = models.SlugField(max_length=100, unique=True)
     image = models.ImageField(null=True,upload_to='vendor/images/')
     is_approved = models.BooleanField(default=False)
