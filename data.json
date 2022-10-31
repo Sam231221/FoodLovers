@@ -1,0 +1,1896 @@
+[
+{
+    "model": "accounts.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$Kc6G1l0XYnhp2tvEPeaPs9$KP0erAZMQGYlCCN2NEvFu/j7I4c3ayAVUV08x8Bt+GM=",
+        "first_name": "Sameer",
+        "last_name": "Shahi",
+        "username": "Sam",
+        "email": "samirshahi9882@gmail.com",
+        "phone_number": "",
+        "role": null,
+        "date_joined": "2022-08-14T15:25:35.953Z",
+        "last_login": "2022-10-31T06:24:42.471Z",
+        "created_date": "2022-08-14T15:25:35.953Z",
+        "modified_date": "2022-08-14T15:25:35.972Z",
+        "is_admin": true,
+        "is_staff": true,
+        "is_active": true,
+        "is_superadmin": true
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$320000$A9UR1eUPQvSZYXVZz0wxd8$oXxkNftOi8qXoiGgzchR0Y7NkackN1hK2Cd3nt997MI=",
+        "first_name": "Sameera",
+        "last_name": "Shah",
+        "username": "samirshahi9882@gmail.com",
+        "email": "sameera12@gmail.com",
+        "phone_number": "9867743856",
+        "role": 1,
+        "date_joined": "2022-08-14T15:30:25.685Z",
+        "last_login": "2022-08-14T15:30:25.685Z",
+        "created_date": "2022-08-14T15:30:25.685Z",
+        "modified_date": "2022-08-14T15:31:02.661Z",
+        "is_admin": true,
+        "is_staff": true,
+        "is_active": true,
+        "is_superadmin": true
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$Ru6ZorFquCC9QGbxFB7aJV$tvy4y8DTcaasc9ZsXbi+9XlPYzYbX95ZIk/zHOA7Mfc=",
+        "first_name": "Sangit",
+        "last_name": "Maharjan",
+        "username": "Sangit",
+        "email": "sangit123@gmail.com",
+        "phone_number": "",
+        "role": 1,
+        "date_joined": "2022-09-12T16:46:18.924Z",
+        "last_login": "2022-09-12T16:46:18.926Z",
+        "created_date": "2022-09-12T16:46:18.926Z",
+        "modified_date": "2022-09-12T16:47:16.073Z",
+        "is_admin": true,
+        "is_staff": true,
+        "is_active": true,
+        "is_superadmin": false
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 4,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$nQYMKiwq8StQYoZ8zCfBUq$0ON4PwJNcmVCFbbLustRiOWUdrssPEcavxallMIV/j4=",
+        "first_name": "eshika",
+        "last_name": "malla",
+        "username": "eshika",
+        "email": "eshika123@gmail.com",
+        "phone_number": "",
+        "role": 1,
+        "date_joined": "2022-09-12T16:50:28.889Z",
+        "last_login": "2022-09-12T16:50:28.890Z",
+        "created_date": "2022-09-12T16:50:28.890Z",
+        "modified_date": "2022-09-12T16:50:57.619Z",
+        "is_admin": true,
+        "is_staff": true,
+        "is_active": true,
+        "is_superadmin": true
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 5,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$usPo1XYRlvKuwSNTGmdSJV$Deh9Y552In83GBI8wY7LsyhDBDHx2HcDqp/lTOKn/To=",
+        "first_name": "sama",
+        "last_name": "shahi",
+        "username": "sama",
+        "email": "sama123@gmail.com",
+        "phone_number": "",
+        "role": 1,
+        "date_joined": "2022-09-12T16:51:18.849Z",
+        "last_login": "2022-09-12T16:51:18.849Z",
+        "created_date": "2022-09-12T16:51:18.849Z",
+        "modified_date": "2022-09-12T16:51:44.007Z",
+        "is_admin": true,
+        "is_staff": true,
+        "is_active": true,
+        "is_superadmin": false
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 6,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$OrpsbZoAeQkbbrvEokqu81$TEpaagZg7Lb3uQP78mAPJfBHHP+qHW+mhnpRhqFwBQY=",
+        "first_name": "Ram",
+        "last_name": "Gurung",
+        "username": "Ram",
+        "email": "ram123@gmail.com",
+        "phone_number": "",
+        "role": 1,
+        "date_joined": "2022-09-12T16:52:04.422Z",
+        "last_login": "2022-09-12T16:52:04.422Z",
+        "created_date": "2022-09-12T16:52:04.422Z",
+        "modified_date": "2022-09-12T16:52:31.658Z",
+        "is_admin": false,
+        "is_staff": true,
+        "is_active": true,
+        "is_superadmin": false
+    }
+},
+{
+    "model": "accounts.userprofile",
+    "pk": 1,
+    "fields": {
+        "user": 1,
+        "profile_picture": "users/profile_pictures/Capture.PNG",
+        "cover_photo": "users/cover_photos/1654786761779.jpg",
+        "address": "Bagar",
+        "country": "Nepal",
+        "state": "Gandaki",
+        "city": "Pokhara",
+        "pin_code": "33700",
+        "latitude": null,
+        "longitude": null,
+        "location": "SRID=4326;POINT (63.10546875000002 36.527294814546245)",
+        "created_at": "2022-08-14T15:25:35.957Z",
+        "modified_at": "2022-10-31T06:24:42.559Z"
+    }
+},
+{
+    "model": "accounts.userprofile",
+    "pk": 2,
+    "fields": {
+        "user": 2,
+        "profile_picture": "users/profile_pictures/bishalbhujel.jpg",
+        "cover_photo": "users/cover_photos/15728523942P1ZROem99.jpg",
+        "address": "Bagar",
+        "country": "Nepal",
+        "state": "Gandaki",
+        "city": "Pokhara",
+        "pin_code": "33700",
+        "latitude": "28.240737",
+        "longitude": "83.987662",
+        "location": "SRID=4326;POINT (83.987662 28.240737)",
+        "created_at": "2022-08-14T15:30:25.687Z",
+        "modified_at": "2022-09-11T14:48:09.569Z"
+    }
+},
+{
+    "model": "accounts.userprofile",
+    "pk": 3,
+    "fields": {
+        "user": 3,
+        "profile_picture": "",
+        "cover_photo": "",
+        "address": null,
+        "country": null,
+        "state": null,
+        "city": null,
+        "pin_code": null,
+        "latitude": null,
+        "longitude": null,
+        "location": null,
+        "created_at": "2022-09-12T16:46:19.110Z",
+        "modified_at": "2022-09-12T16:47:16.092Z"
+    }
+},
+{
+    "model": "accounts.userprofile",
+    "pk": 4,
+    "fields": {
+        "user": 4,
+        "profile_picture": "",
+        "cover_photo": "",
+        "address": null,
+        "country": null,
+        "state": null,
+        "city": null,
+        "pin_code": null,
+        "latitude": null,
+        "longitude": null,
+        "location": null,
+        "created_at": "2022-09-12T16:50:28.892Z",
+        "modified_at": "2022-09-12T16:50:57.650Z"
+    }
+},
+{
+    "model": "accounts.userprofile",
+    "pk": 5,
+    "fields": {
+        "user": 5,
+        "profile_picture": "",
+        "cover_photo": "",
+        "address": null,
+        "country": null,
+        "state": null,
+        "city": null,
+        "pin_code": null,
+        "latitude": null,
+        "longitude": null,
+        "location": null,
+        "created_at": "2022-09-12T16:51:18.851Z",
+        "modified_at": "2022-09-12T16:51:44.030Z"
+    }
+},
+{
+    "model": "accounts.userprofile",
+    "pk": 6,
+    "fields": {
+        "user": 6,
+        "profile_picture": "",
+        "cover_photo": "",
+        "address": null,
+        "country": null,
+        "state": null,
+        "city": null,
+        "pin_code": null,
+        "latitude": null,
+        "longitude": null,
+        "location": null,
+        "created_at": "2022-09-12T16:52:04.425Z",
+        "modified_at": "2022-09-12T16:52:31.675Z"
+    }
+},
+{
+    "model": "vendor.address",
+    "pk": 1,
+    "fields": {
+        "name": "Siri Nagar Marga, Butwal"
+    }
+},
+{
+    "model": "vendor.address",
+    "pk": 2,
+    "fields": {
+        "name": "Newroad, Pokhara"
+    }
+},
+{
+    "model": "vendor.address",
+    "pk": 3,
+    "fields": {
+        "name": "Durga Park, Butwal"
+    }
+},
+{
+    "model": "vendor.address",
+    "pk": 4,
+    "fields": {
+        "name": "Gangabu ,Kathmandu"
+    }
+},
+{
+    "model": "vendor.address",
+    "pk": 5,
+    "fields": {
+        "name": "Lakeside, Pokhara"
+    }
+},
+{
+    "model": "vendor.address",
+    "pk": 6,
+    "fields": {
+        "name": "Amarsing Chowk, Pokhara"
+    }
+},
+{
+    "model": "vendor.vendor",
+    "pk": 1,
+    "fields": {
+        "user": 1,
+        "user_profile": 1,
+        "vendor_name": "HIMALAYAN BUBBLE TEA",
+        "address": null,
+        "vendor_slug": "HIMALAYAN-BUBBLE-TEA",
+        "image": "vendor/images/vendor1.jpg",
+        "is_approved": true,
+        "is_featured": false,
+        "created_at": "2022-08-14T15:28:38.716Z",
+        "modified_at": "2022-09-11T14:06:19.515Z"
+    }
+},
+{
+    "model": "vendor.vendor",
+    "pk": 2,
+    "fields": {
+        "user": 2,
+        "user_profile": 2,
+        "vendor_name": "DEEP GARDEN",
+        "address": null,
+        "vendor_slug": "DEEP_GARDEN",
+        "image": "vendor/images/vendor2.jpg",
+        "is_approved": true,
+        "is_featured": true,
+        "created_at": "2022-08-14T15:31:24.592Z",
+        "modified_at": "2022-09-13T02:13:33.988Z"
+    }
+},
+{
+    "model": "vendor.vendor",
+    "pk": 3,
+    "fields": {
+        "user": 3,
+        "user_profile": 3,
+        "vendor_name": "La Poma Restro",
+        "address": null,
+        "vendor_slug": "LaPomaRestro",
+        "image": "vendor/images/pexels-huy-phan-1383776.jpg",
+        "is_approved": true,
+        "is_featured": false,
+        "created_at": "2022-09-12T16:48:40.358Z",
+        "modified_at": "2022-09-12T16:48:40.358Z"
+    }
+},
+{
+    "model": "vendor.vendor",
+    "pk": 4,
+    "fields": {
+        "user": 6,
+        "user_profile": 6,
+        "vendor_name": "MOBU Restaurant",
+        "address": null,
+        "vendor_slug": "Moburaestro",
+        "image": "vendor/images/pexels-brett-sayles-1322184.jpg",
+        "is_approved": true,
+        "is_featured": true,
+        "created_at": "2022-09-12T16:53:07.169Z",
+        "modified_at": "2022-09-13T11:45:39.327Z"
+    }
+},
+{
+    "model": "vendor.vendor",
+    "pk": 5,
+    "fields": {
+        "user": 5,
+        "user_profile": 5,
+        "vendor_name": "Station FootPub",
+        "address": null,
+        "vendor_slug": "stationfootpub",
+        "image": "vendor/images/vendor5.jpg",
+        "is_approved": true,
+        "is_featured": false,
+        "created_at": "2022-09-12T16:54:33.158Z",
+        "modified_at": "2022-09-12T16:54:33.158Z"
+    }
+},
+{
+    "model": "vendor.openinghour",
+    "pk": 1,
+    "fields": {
+        "vendor": 4,
+        "day": 2,
+        "from_hour": "10:00 AM",
+        "to_hour": "05:30 PM",
+        "is_closed": false
+    }
+},
+{
+    "model": "vendor.openinghour",
+    "pk": 2,
+    "fields": {
+        "vendor": 2,
+        "day": 1,
+        "from_hour": "10:00 AM",
+        "to_hour": "05:00 PM",
+        "is_closed": false
+    }
+},
+{
+    "model": "vendor.openinghour",
+    "pk": 3,
+    "fields": {
+        "vendor": 2,
+        "day": 7,
+        "from_hour": "11:00 AM",
+        "to_hour": "05:30 PM",
+        "is_closed": false
+    }
+},
+{
+    "model": "vendor.openinghour",
+    "pk": 4,
+    "fields": {
+        "vendor": 2,
+        "day": 2,
+        "from_hour": "10:00 AM",
+        "to_hour": "05:00 PM",
+        "is_closed": false
+    }
+},
+{
+    "model": "vendor.openinghour",
+    "pk": 5,
+    "fields": {
+        "vendor": 2,
+        "day": 3,
+        "from_hour": "10:30 AM",
+        "to_hour": "05:00 PM",
+        "is_closed": false
+    }
+},
+{
+    "model": "vendor.openinghour",
+    "pk": 6,
+    "fields": {
+        "vendor": 2,
+        "day": 4,
+        "from_hour": "10:30 AM",
+        "to_hour": "10:00 PM",
+        "is_closed": false
+    }
+},
+{
+    "model": "vendor.openinghour",
+    "pk": 7,
+    "fields": {
+        "vendor": 2,
+        "day": 5,
+        "from_hour": "10:30 AM",
+        "to_hour": "05:30 PM",
+        "is_closed": false
+    }
+},
+{
+    "model": "vendor.openinghour",
+    "pk": 8,
+    "fields": {
+        "vendor": 2,
+        "day": 6,
+        "from_hour": "10:30 AM",
+        "to_hour": "05:30 PM",
+        "is_closed": false
+    }
+},
+{
+    "model": "menu.category",
+    "pk": 1,
+    "fields": {
+        "vendor": 2,
+        "category_name": "Fastfood",
+        "slug": "fastfood",
+        "description": "fastfood category description",
+        "created_at": "2022-09-11T14:11:58.947Z",
+        "updated_at": "2022-09-11T14:17:31.180Z"
+    }
+},
+{
+    "model": "menu.category",
+    "pk": 2,
+    "fields": {
+        "vendor": 2,
+        "category_name": "Cold-drinks",
+        "slug": "cold-drinks",
+        "description": "Cold drink category description",
+        "created_at": "2022-09-11T14:12:31.395Z",
+        "updated_at": "2022-09-11T14:17:43.632Z"
+    }
+},
+{
+    "model": "menu.category",
+    "pk": 3,
+    "fields": {
+        "vendor": 4,
+        "category_name": "Fast food",
+        "slug": "fast-food",
+        "description": "",
+        "created_at": "2022-09-13T01:31:01.552Z",
+        "updated_at": "2022-09-13T01:31:01.552Z"
+    }
+},
+{
+    "model": "menu.category",
+    "pk": 4,
+    "fields": {
+        "vendor": 2,
+        "category_name": "Snacks",
+        "slug": "snacks",
+        "description": "",
+        "created_at": "2022-09-13T01:46:54.086Z",
+        "updated_at": "2022-09-13T01:46:54.086Z"
+    }
+},
+{
+    "model": "menu.fooditem",
+    "pk": 1,
+    "fields": {
+        "vendor": 2,
+        "category": 1,
+        "food_title": "sandwhich",
+        "slug": "sandwhich",
+        "description": "sadasd",
+        "price": "23.00",
+        "image": "foodimages/sandwhich.jpg",
+        "is_available": true,
+        "created_at": "2022-09-11T14:14:38.398Z",
+        "updated_at": "2022-09-11T14:16:16.995Z"
+    }
+},
+{
+    "model": "menu.fooditem",
+    "pk": 2,
+    "fields": {
+        "vendor": 2,
+        "category": 2,
+        "food_title": "Orange Juice",
+        "slug": "orange-juice",
+        "description": "food item description",
+        "price": "60.00",
+        "image": "foodimages/orangejuice.jpg",
+        "is_available": true,
+        "created_at": "2022-09-11T14:19:25.328Z",
+        "updated_at": "2022-09-11T14:19:25.328Z"
+    }
+},
+{
+    "model": "menu.fooditem",
+    "pk": 3,
+    "fields": {
+        "vendor": 4,
+        "category": 3,
+        "food_title": "Burger",
+        "slug": "burger",
+        "description": "",
+        "price": "200.00",
+        "image": "foodimages/burger.jpg",
+        "is_available": true,
+        "created_at": "2022-09-13T01:33:13.286Z",
+        "updated_at": "2022-09-13T11:48:09.728Z"
+    }
+},
+{
+    "model": "menu.fooditem",
+    "pk": 4,
+    "fields": {
+        "vendor": 2,
+        "category": 1,
+        "food_title": "Hot Wings",
+        "slug": "hot-wings",
+        "description": "",
+        "price": "200.00",
+        "image": "foodimages/hot-wings.jpg",
+        "is_available": true,
+        "created_at": "2022-09-13T01:42:52.593Z",
+        "updated_at": "2022-09-13T01:42:52.593Z"
+    }
+},
+{
+    "model": "menu.fooditem",
+    "pk": 5,
+    "fields": {
+        "vendor": 2,
+        "category": 2,
+        "food_title": "Cocacola",
+        "slug": "cocacola",
+        "description": "",
+        "price": "60.00",
+        "image": "foodimages/cocacola.jpg",
+        "is_available": true,
+        "created_at": "2022-09-13T01:44:45.180Z",
+        "updated_at": "2022-09-13T01:44:45.180Z"
+    }
+},
+{
+    "model": "menu.fooditem",
+    "pk": 6,
+    "fields": {
+        "vendor": 2,
+        "category": 2,
+        "food_title": "Sprite",
+        "slug": "sprite",
+        "description": "",
+        "price": "60.00",
+        "image": "foodimages/sprite.jpg",
+        "is_available": true,
+        "created_at": "2022-09-13T01:45:14.072Z",
+        "updated_at": "2022-09-13T01:45:14.072Z"
+    }
+},
+{
+    "model": "menu.fooditem",
+    "pk": 7,
+    "fields": {
+        "vendor": 2,
+        "category": 4,
+        "food_title": "Sausage",
+        "slug": "sausage",
+        "description": "",
+        "price": "60.00",
+        "image": "foodimages/sasusage.jpg",
+        "is_available": true,
+        "created_at": "2022-09-13T01:49:53.846Z",
+        "updated_at": "2022-09-13T01:49:53.846Z"
+    }
+},
+{
+    "model": "orders.payment",
+    "pk": 1,
+    "fields": {
+        "user": 1,
+        "transaction_id": "6UX57263P9844734A",
+        "payment_method": "PayPal",
+        "amount": "189.0",
+        "status": "COMPLETED",
+        "created_at": "2022-09-12T08:07:42.365Z"
+    }
+},
+{
+    "model": "orders.payment",
+    "pk": 2,
+    "fields": {
+        "user": 1,
+        "transaction_id": "6S800939D9224434X",
+        "payment_method": "PayPal",
+        "amount": "189.0",
+        "status": "COMPLETED",
+        "created_at": "2022-09-12T08:18:07.373Z"
+    }
+},
+{
+    "model": "orders.payment",
+    "pk": 3,
+    "fields": {
+        "user": 1,
+        "transaction_id": "68V12808GT796403N",
+        "payment_method": "PayPal",
+        "amount": "189.0",
+        "status": "COMPLETED",
+        "created_at": "2022-09-12T08:19:53.480Z"
+    }
+},
+{
+    "model": "orders.payment",
+    "pk": 4,
+    "fields": {
+        "user": 1,
+        "transaction_id": "97C408733U7002317",
+        "payment_method": "PayPal",
+        "amount": "189.0",
+        "status": "COMPLETED",
+        "created_at": "2022-09-12T08:23:09.807Z"
+    }
+},
+{
+    "model": "orders.payment",
+    "pk": 5,
+    "fields": {
+        "user": 1,
+        "transaction_id": "4HE91117F1501243F",
+        "payment_method": "PayPal",
+        "amount": "189.0",
+        "status": "COMPLETED",
+        "created_at": "2022-09-12T08:41:28.402Z"
+    }
+},
+{
+    "model": "orders.payment",
+    "pk": 6,
+    "fields": {
+        "user": 1,
+        "transaction_id": "7WH99408J68806949",
+        "payment_method": "PayPal",
+        "amount": "189.0",
+        "status": "COMPLETED",
+        "created_at": "2022-09-12T08:46:39.736Z"
+    }
+},
+{
+    "model": "orders.payment",
+    "pk": 7,
+    "fields": {
+        "user": 1,
+        "transaction_id": "47U0819153355072R",
+        "payment_method": "PayPal",
+        "amount": "189.0",
+        "status": "COMPLETED",
+        "created_at": "2022-09-12T08:56:46.466Z"
+    }
+},
+{
+    "model": "orders.payment",
+    "pk": 8,
+    "fields": {
+        "user": 1,
+        "transaction_id": "52H860021H574320H",
+        "payment_method": "PayPal",
+        "amount": "189.0",
+        "status": "COMPLETED",
+        "created_at": "2022-09-12T09:05:51.492Z"
+    }
+},
+{
+    "model": "orders.payment",
+    "pk": 9,
+    "fields": {
+        "user": 1,
+        "transaction_id": "761916106A4577335",
+        "payment_method": "PayPal",
+        "amount": "69.0",
+        "status": "COMPLETED",
+        "created_at": "2022-09-12T10:59:26.342Z"
+    }
+},
+{
+    "model": "orders.payment",
+    "pk": 10,
+    "fields": {
+        "user": 1,
+        "transaction_id": "206505295X243170L",
+        "payment_method": "PayPal",
+        "amount": "23.0",
+        "status": "COMPLETED",
+        "created_at": "2022-09-13T02:03:28.246Z"
+    }
+},
+{
+    "model": "orders.payment",
+    "pk": 11,
+    "fields": {
+        "user": 1,
+        "transaction_id": "84C44250PX8447258",
+        "payment_method": "PayPal",
+        "amount": "143.0",
+        "status": "COMPLETED",
+        "created_at": "2022-09-13T11:12:30.696Z"
+    }
+},
+{
+    "model": "orders.payment",
+    "pk": 12,
+    "fields": {
+        "user": 1,
+        "transaction_id": "84Y49231H4345012J",
+        "payment_method": "PayPal",
+        "amount": "483.0",
+        "status": "COMPLETED",
+        "created_at": "2022-10-31T08:05:38.945Z"
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 1,
+    "fields": {
+        "user": 1,
+        "payment": null,
+        "order_number": "202209112132051",
+        "first_name": "Sameer",
+        "last_name": "Shahi",
+        "phone": "",
+        "email": "samirshahi9882@gmail.com",
+        "address": "Bagar",
+        "country": "Nepal",
+        "state": "Gandaki",
+        "city": "Pokhara",
+        "pin_code": "33700",
+        "total": 189.0,
+        "tax_data": "{}",
+        "total_data": "{\"2\": {\"189.00\": \"{}\"}}",
+        "total_tax": 0.0,
+        "payment_method": "PayPal",
+        "status": "New",
+        "is_ordered": false,
+        "created_at": "2022-09-11T15:47:04.887Z",
+        "updated_at": "2022-09-11T15:47:05.050Z",
+        "vendors": [
+            2
+        ]
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 2,
+    "fields": {
+        "user": 1,
+        "payment": null,
+        "order_number": "202209112133322",
+        "first_name": "Sameer",
+        "last_name": "Shahi",
+        "phone": "",
+        "email": "samirshahi9882@gmail.com",
+        "address": "Bagar",
+        "country": "Nepal",
+        "state": "Gandaki",
+        "city": "Pokhara",
+        "pin_code": "33700",
+        "total": 189.0,
+        "tax_data": "{}",
+        "total_data": "{\"2\": {\"189.00\": \"{}\"}}",
+        "total_tax": 0.0,
+        "payment_method": "PayPal",
+        "status": "New",
+        "is_ordered": false,
+        "created_at": "2022-09-11T15:48:32.139Z",
+        "updated_at": "2022-09-11T15:48:32.152Z",
+        "vendors": [
+            2
+        ]
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 3,
+    "fields": {
+        "user": 1,
+        "payment": null,
+        "order_number": "202209112137173",
+        "first_name": "Sameer",
+        "last_name": "Shahi",
+        "phone": "",
+        "email": "samirshahi9882@gmail.com",
+        "address": "Bagar",
+        "country": "Nepal",
+        "state": "Gandaki",
+        "city": "Pokhara",
+        "pin_code": "33700",
+        "total": 189.0,
+        "tax_data": "{}",
+        "total_data": "{\"2\": {\"189.00\": \"{}\"}}",
+        "total_tax": 0.0,
+        "payment_method": "PayPal",
+        "status": "New",
+        "is_ordered": false,
+        "created_at": "2022-09-11T15:52:17.219Z",
+        "updated_at": "2022-09-11T15:52:17.227Z",
+        "vendors": [
+            2
+        ]
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 4,
+    "fields": {
+        "user": 1,
+        "payment": null,
+        "order_number": "202209121242504",
+        "first_name": "Sameer",
+        "last_name": "Shahi",
+        "phone": "",
+        "email": "samirshahi9882@gmail.com",
+        "address": "Bagar",
+        "country": "Nepal",
+        "state": "Gandaki",
+        "city": "Pokhara",
+        "pin_code": "33700",
+        "total": 189.0,
+        "tax_data": "{}",
+        "total_data": "{\"2\": {\"189.00\": \"{}\"}}",
+        "total_tax": 0.0,
+        "payment_method": "PayPal",
+        "status": "New",
+        "is_ordered": false,
+        "created_at": "2022-09-12T06:57:50.311Z",
+        "updated_at": "2022-09-12T06:57:50.771Z",
+        "vendors": [
+            2
+        ]
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 5,
+    "fields": {
+        "user": 1,
+        "payment": null,
+        "order_number": "202209121342185",
+        "first_name": "Sameer",
+        "last_name": "Shahi",
+        "phone": "",
+        "email": "samirshahi9882@gmail.com",
+        "address": "Bagar",
+        "country": "Nepal",
+        "state": "Gandaki",
+        "city": "Pokhara",
+        "pin_code": "33700",
+        "total": 189.0,
+        "tax_data": "{}",
+        "total_data": "{\"2\": {\"189.00\": \"{}\"}}",
+        "total_tax": 0.0,
+        "payment_method": "PayPal",
+        "status": "New",
+        "is_ordered": false,
+        "created_at": "2022-09-12T07:57:17.859Z",
+        "updated_at": "2022-09-12T07:57:18.121Z",
+        "vendors": [
+            2
+        ]
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 6,
+    "fields": {
+        "user": 1,
+        "payment": null,
+        "order_number": "202209121348256",
+        "first_name": "Sameer",
+        "last_name": "Shahi",
+        "phone": "",
+        "email": "samirshahi9882@gmail.com",
+        "address": "Bagar",
+        "country": "Nepal",
+        "state": "Gandaki",
+        "city": "Pokhara",
+        "pin_code": "33700",
+        "total": 189.0,
+        "tax_data": "{}",
+        "total_data": "{\"2\": {\"189.00\": \"{}\"}}",
+        "total_tax": 0.0,
+        "payment_method": "PayPal",
+        "status": "New",
+        "is_ordered": false,
+        "created_at": "2022-09-12T08:03:25.255Z",
+        "updated_at": "2022-09-12T08:03:25.265Z",
+        "vendors": [
+            2
+        ]
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 7,
+    "fields": {
+        "user": 1,
+        "payment": 1,
+        "order_number": "202209121351537",
+        "first_name": "Sameer",
+        "last_name": "Shahi",
+        "phone": "",
+        "email": "samirshahi9882@gmail.com",
+        "address": "Bagar",
+        "country": "Nepal",
+        "state": "Gandaki",
+        "city": "Pokhara",
+        "pin_code": "33700",
+        "total": 189.0,
+        "tax_data": "{}",
+        "total_data": "{\"2\": {\"189.00\": \"{}\"}}",
+        "total_tax": 0.0,
+        "payment_method": "PayPal",
+        "status": "New",
+        "is_ordered": true,
+        "created_at": "2022-09-12T08:06:53.764Z",
+        "updated_at": "2022-09-12T08:07:42.423Z",
+        "vendors": [
+            2
+        ]
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 8,
+    "fields": {
+        "user": 1,
+        "payment": 2,
+        "order_number": "202209121402438",
+        "first_name": "Sameer",
+        "last_name": "Shahi",
+        "phone": "",
+        "email": "samirshahi9882@gmail.com",
+        "address": "Bagar",
+        "country": "Nepal",
+        "state": "Gandaki",
+        "city": "Pokhara",
+        "pin_code": "33700",
+        "total": 189.0,
+        "tax_data": "{}",
+        "total_data": "{\"2\": {\"189.00\": \"{}\"}}",
+        "total_tax": 0.0,
+        "payment_method": "PayPal",
+        "status": "New",
+        "is_ordered": true,
+        "created_at": "2022-09-12T08:17:43.874Z",
+        "updated_at": "2022-09-12T08:18:07.380Z",
+        "vendors": [
+            2
+        ]
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 9,
+    "fields": {
+        "user": 1,
+        "payment": null,
+        "order_number": "202209121404159",
+        "first_name": "Sameer",
+        "last_name": "Shahi",
+        "phone": "",
+        "email": "samirshahi9882@gmail.com",
+        "address": "Bagar",
+        "country": "Nepal",
+        "state": "Gandaki",
+        "city": "Pokhara",
+        "pin_code": "33700",
+        "total": 189.0,
+        "tax_data": "{}",
+        "total_data": "{\"2\": {\"189.00\": \"{}\"}}",
+        "total_tax": 0.0,
+        "payment_method": "PayPal",
+        "status": "New",
+        "is_ordered": false,
+        "created_at": "2022-09-12T08:19:15.830Z",
+        "updated_at": "2022-09-12T08:19:15.839Z",
+        "vendors": [
+            2
+        ]
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 10,
+    "fields": {
+        "user": 1,
+        "payment": 3,
+        "order_number": "2022091214043510",
+        "first_name": "Sameer",
+        "last_name": "Shahi",
+        "phone": "",
+        "email": "samirshahi9882@gmail.com",
+        "address": "Bagar",
+        "country": "Nepal",
+        "state": "Gandaki",
+        "city": "Pokhara",
+        "pin_code": "33700",
+        "total": 189.0,
+        "tax_data": "{}",
+        "total_data": "{\"2\": {\"189.00\": \"{}\"}}",
+        "total_tax": 0.0,
+        "payment_method": "PayPal",
+        "status": "New",
+        "is_ordered": true,
+        "created_at": "2022-09-12T08:19:35.746Z",
+        "updated_at": "2022-09-12T08:19:53.486Z",
+        "vendors": [
+            2
+        ]
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 11,
+    "fields": {
+        "user": 1,
+        "payment": null,
+        "order_number": "2022091214071011",
+        "first_name": "Sameer",
+        "last_name": "Shahi",
+        "phone": "",
+        "email": "samirshahi9882@gmail.com",
+        "address": "Bagar",
+        "country": "Nepal",
+        "state": "Gandaki",
+        "city": "Pokhara",
+        "pin_code": "33700",
+        "total": 189.0,
+        "tax_data": "{}",
+        "total_data": "{\"2\": {\"189.00\": \"{}\"}}",
+        "total_tax": 0.0,
+        "payment_method": "PayPal",
+        "status": "New",
+        "is_ordered": false,
+        "created_at": "2022-09-12T08:22:10.269Z",
+        "updated_at": "2022-09-12T08:22:10.281Z",
+        "vendors": [
+            2
+        ]
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 12,
+    "fields": {
+        "user": 1,
+        "payment": 4,
+        "order_number": "2022091214074912",
+        "first_name": "Sameer",
+        "last_name": "Shahi",
+        "phone": "",
+        "email": "samirshahi9882@gmail.com",
+        "address": "Bagar",
+        "country": "Nepal",
+        "state": "Gandaki",
+        "city": "Pokhara",
+        "pin_code": "33700",
+        "total": 189.0,
+        "tax_data": "{}",
+        "total_data": "{\"2\": {\"189.00\": \"{}\"}}",
+        "total_tax": 0.0,
+        "payment_method": "PayPal",
+        "status": "New",
+        "is_ordered": true,
+        "created_at": "2022-09-12T08:22:49.620Z",
+        "updated_at": "2022-09-12T08:23:09.809Z",
+        "vendors": [
+            2
+        ]
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 13,
+    "fields": {
+        "user": 1,
+        "payment": 5,
+        "order_number": "2022091214253213",
+        "first_name": "Sameer",
+        "last_name": "Shahi",
+        "phone": "",
+        "email": "samirshahi9882@gmail.com",
+        "address": "Bagar",
+        "country": "Nepal",
+        "state": "Gandaki",
+        "city": "Pokhara",
+        "pin_code": "33700",
+        "total": 189.0,
+        "tax_data": "{}",
+        "total_data": "{\"2\": {\"189.00\": \"{}\"}}",
+        "total_tax": 0.0,
+        "payment_method": "PayPal",
+        "status": "New",
+        "is_ordered": true,
+        "created_at": "2022-09-12T08:40:32.691Z",
+        "updated_at": "2022-09-12T08:41:28.407Z",
+        "vendors": [
+            2
+        ]
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 14,
+    "fields": {
+        "user": 1,
+        "payment": 6,
+        "order_number": "2022091214312314",
+        "first_name": "Sameer",
+        "last_name": "Shahi",
+        "phone": "",
+        "email": "samirshahi9882@gmail.com",
+        "address": "Bagar",
+        "country": "Nepal",
+        "state": "Gandaki",
+        "city": "Pokhara",
+        "pin_code": "33700",
+        "total": 189.0,
+        "tax_data": "{}",
+        "total_data": "{\"2\": {\"189.00\": \"{}\"}}",
+        "total_tax": 0.0,
+        "payment_method": "PayPal",
+        "status": "New",
+        "is_ordered": true,
+        "created_at": "2022-09-12T08:46:23.304Z",
+        "updated_at": "2022-09-12T08:46:39.745Z",
+        "vendors": [
+            2
+        ]
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 15,
+    "fields": {
+        "user": 1,
+        "payment": 7,
+        "order_number": "2022091214410215",
+        "first_name": "Sameer",
+        "last_name": "Shahi",
+        "phone": "",
+        "email": "samirshahi9882@gmail.com",
+        "address": "Bagar",
+        "country": "Nepal",
+        "state": "Gandaki",
+        "city": "Pokhara",
+        "pin_code": "33700",
+        "total": 189.0,
+        "tax_data": "{}",
+        "total_data": "{\"2\": {\"189.00\": \"{}\"}}",
+        "total_tax": 0.0,
+        "payment_method": "PayPal",
+        "status": "New",
+        "is_ordered": true,
+        "created_at": "2022-09-12T08:56:02.413Z",
+        "updated_at": "2022-09-12T08:56:46.469Z",
+        "vendors": [
+            2
+        ]
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 16,
+    "fields": {
+        "user": 1,
+        "payment": 8,
+        "order_number": "2022091214503416",
+        "first_name": "Sameer",
+        "last_name": "Shahi",
+        "phone": "",
+        "email": "samirshahi9882@gmail.com",
+        "address": "Bagar",
+        "country": "Nepal",
+        "state": "Gandaki",
+        "city": "Pokhara",
+        "pin_code": "33700",
+        "total": 189.0,
+        "tax_data": "{}",
+        "total_data": "{\"2\": {\"189.00\": \"{}\"}}",
+        "total_tax": 0.0,
+        "payment_method": "PayPal",
+        "status": "New",
+        "is_ordered": true,
+        "created_at": "2022-09-12T09:05:34.871Z",
+        "updated_at": "2022-09-12T09:05:51.497Z",
+        "vendors": [
+            2
+        ]
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 17,
+    "fields": {
+        "user": 1,
+        "payment": null,
+        "order_number": "2022091216340117",
+        "first_name": "Sameer",
+        "last_name": "Shahi",
+        "phone": "9867743856",
+        "email": "samirshahi9882@gmail.com",
+        "address": "Machhapuchre Tole-3",
+        "country": "Nepal",
+        "state": "Gandaki",
+        "city": "Pokhara",
+        "pin_code": "3423",
+        "total": 69.0,
+        "tax_data": "{}",
+        "total_data": "{\"2\": {\"69.00\": \"{}\"}}",
+        "total_tax": 0.0,
+        "payment_method": "PayPal",
+        "status": "New",
+        "is_ordered": false,
+        "created_at": "2022-09-12T10:49:01.438Z",
+        "updated_at": "2022-09-12T10:49:01.533Z",
+        "vendors": [
+            2
+        ]
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 18,
+    "fields": {
+        "user": 1,
+        "payment": 9,
+        "order_number": "2022091216440018",
+        "first_name": "Sameer",
+        "last_name": "Shahi",
+        "phone": "",
+        "email": "samirshahi9882@gmail.com",
+        "address": "Bagar",
+        "country": "Nepal",
+        "state": "Gandaki",
+        "city": "Pokhara",
+        "pin_code": "33700",
+        "total": 69.0,
+        "tax_data": "{}",
+        "total_data": "{\"2\": {\"69.00\": \"{}\"}}",
+        "total_tax": 0.0,
+        "payment_method": "PayPal",
+        "status": "New",
+        "is_ordered": true,
+        "created_at": "2022-09-12T10:59:00.682Z",
+        "updated_at": "2022-09-12T10:59:26.358Z",
+        "vendors": [
+            2
+        ]
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 19,
+    "fields": {
+        "user": 1,
+        "payment": 10,
+        "order_number": "2022091307475019",
+        "first_name": "Sameer",
+        "last_name": "Shahi",
+        "phone": "",
+        "email": "samirshahi9882@gmail.com",
+        "address": "Bagar",
+        "country": "Nepal",
+        "state": "Gandaki",
+        "city": "Pokhara",
+        "pin_code": "33700",
+        "total": 23.0,
+        "tax_data": "{}",
+        "total_data": "{\"2\": {\"23.00\": \"{}\"}}",
+        "total_tax": 0.0,
+        "payment_method": "PayPal",
+        "status": "New",
+        "is_ordered": true,
+        "created_at": "2022-09-13T02:02:50.782Z",
+        "updated_at": "2022-09-13T02:03:28.262Z",
+        "vendors": [
+            2
+        ]
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 20,
+    "fields": {
+        "user": 1,
+        "payment": null,
+        "order_number": "2022091316511620",
+        "first_name": "Sameer",
+        "last_name": "Shahi",
+        "phone": "",
+        "email": "samirshahi9882@gmail.com",
+        "address": "Bagar",
+        "country": "Nepal",
+        "state": "Gandaki",
+        "city": "Pokhara",
+        "pin_code": "33700",
+        "total": 143.0,
+        "tax_data": "{}",
+        "total_data": "{\"2\": {\"143.00\": \"{}\"}}",
+        "total_tax": 0.0,
+        "payment_method": "PayPal",
+        "status": "New",
+        "is_ordered": false,
+        "created_at": "2022-09-13T11:06:16.366Z",
+        "updated_at": "2022-09-13T11:06:17.105Z",
+        "vendors": [
+            2
+        ]
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 21,
+    "fields": {
+        "user": 1,
+        "payment": null,
+        "order_number": "2022091316544121",
+        "first_name": "Sameer",
+        "last_name": "Shahi",
+        "phone": "",
+        "email": "samirshahi9882@gmail.com",
+        "address": "Bagar",
+        "country": "Nepal",
+        "state": "Gandaki",
+        "city": "Pokhara",
+        "pin_code": "33700",
+        "total": 143.0,
+        "tax_data": "{}",
+        "total_data": "{\"2\": {\"143.00\": \"{}\"}}",
+        "total_tax": 0.0,
+        "payment_method": "PayPal",
+        "status": "New",
+        "is_ordered": false,
+        "created_at": "2022-09-13T11:09:41.011Z",
+        "updated_at": "2022-09-13T11:09:41.025Z",
+        "vendors": [
+            2
+        ]
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 22,
+    "fields": {
+        "user": 1,
+        "payment": null,
+        "order_number": "2022091316555022",
+        "first_name": "Sameer",
+        "last_name": "Shahi",
+        "phone": "",
+        "email": "samirshahi9882@gmail.com",
+        "address": "Bagar",
+        "country": "Nepal",
+        "state": "Gandaki",
+        "city": "Pokhara",
+        "pin_code": "33700",
+        "total": 143.0,
+        "tax_data": "{}",
+        "total_data": "{\"2\": {\"143.00\": \"{}\"}}",
+        "total_tax": 0.0,
+        "payment_method": "PayPal",
+        "status": "New",
+        "is_ordered": false,
+        "created_at": "2022-09-13T11:10:50.296Z",
+        "updated_at": "2022-09-13T11:10:50.306Z",
+        "vendors": [
+            2
+        ]
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 23,
+    "fields": {
+        "user": 1,
+        "payment": null,
+        "order_number": "2022091316563923",
+        "first_name": "Sameer",
+        "last_name": "Shahi",
+        "phone": "",
+        "email": "samirshahi9882@gmail.com",
+        "address": "Bagar",
+        "country": "Nepal",
+        "state": "Gandaki",
+        "city": "Pokhara",
+        "pin_code": "33700",
+        "total": 143.0,
+        "tax_data": "{}",
+        "total_data": "{\"2\": {\"143.00\": \"{}\"}}",
+        "total_tax": 0.0,
+        "payment_method": "PayPal",
+        "status": "New",
+        "is_ordered": false,
+        "created_at": "2022-09-13T11:11:39.690Z",
+        "updated_at": "2022-09-13T11:11:39.706Z",
+        "vendors": [
+            2
+        ]
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 24,
+    "fields": {
+        "user": 1,
+        "payment": 11,
+        "order_number": "2022091316570924",
+        "first_name": "Sameer",
+        "last_name": "Shahi",
+        "phone": "9867743856",
+        "email": "samirshahi9882@gmail.com",
+        "address": "Machhapuchre Tole-3",
+        "country": "Nepal",
+        "state": "Gandaki",
+        "city": "Pokhara",
+        "pin_code": "3423",
+        "total": 143.0,
+        "tax_data": "{}",
+        "total_data": "{\"2\": {\"143.00\": \"{}\"}}",
+        "total_tax": 0.0,
+        "payment_method": "PayPal",
+        "status": "New",
+        "is_ordered": true,
+        "created_at": "2022-09-13T11:12:08.994Z",
+        "updated_at": "2022-09-13T11:12:30.712Z",
+        "vendors": [
+            2
+        ]
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 25,
+    "fields": {
+        "user": 1,
+        "payment": null,
+        "order_number": "2022103113463625",
+        "first_name": "Sameer",
+        "last_name": "Shahi",
+        "phone": "",
+        "email": "samirshahi9882@gmail.com",
+        "address": "Bagar",
+        "country": "Nepal",
+        "state": "Gandaki",
+        "city": "Pokhara",
+        "pin_code": "33700",
+        "total": 483.0,
+        "tax_data": "{}",
+        "total_data": "{\"2\": {\"483.00\": \"{}\"}}",
+        "total_tax": 0.0,
+        "payment_method": "PayPal",
+        "status": "New",
+        "is_ordered": false,
+        "created_at": "2022-10-31T08:01:36.537Z",
+        "updated_at": "2022-10-31T08:01:36.910Z",
+        "vendors": [
+            2
+        ]
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 26,
+    "fields": {
+        "user": 1,
+        "payment": 12,
+        "order_number": "2022103113502126",
+        "first_name": "Sameer",
+        "last_name": "Shahi",
+        "phone": "",
+        "email": "samirshahi9882@gmail.com",
+        "address": "Bagar",
+        "country": "Nepal",
+        "state": "Gandaki",
+        "city": "Pokhara",
+        "pin_code": "33700",
+        "total": 483.0,
+        "tax_data": "{}",
+        "total_data": "{\"2\": {\"483.00\": \"{}\"}}",
+        "total_tax": 0.0,
+        "payment_method": "PayPal",
+        "status": "New",
+        "is_ordered": true,
+        "created_at": "2022-10-31T08:05:21.401Z",
+        "updated_at": "2022-10-31T08:05:39.005Z",
+        "vendors": [
+            2
+        ]
+    }
+},
+{
+    "model": "orders.orderedfood",
+    "pk": 1,
+    "fields": {
+        "order": 7,
+        "payment": 1,
+        "user": 1,
+        "fooditem": 1,
+        "quantity": 3,
+        "price": 23.0,
+        "amount": 69.0,
+        "created_at": "2022-09-12T08:07:42.434Z",
+        "updated_at": "2022-09-12T08:07:42.434Z"
+    }
+},
+{
+    "model": "orders.orderedfood",
+    "pk": 2,
+    "fields": {
+        "order": 7,
+        "payment": 1,
+        "user": 1,
+        "fooditem": 2,
+        "quantity": 2,
+        "price": 60.0,
+        "amount": 120.0,
+        "created_at": "2022-09-12T08:07:42.521Z",
+        "updated_at": "2022-09-12T08:07:42.521Z"
+    }
+},
+{
+    "model": "orders.orderedfood",
+    "pk": 3,
+    "fields": {
+        "order": 8,
+        "payment": 2,
+        "user": 1,
+        "fooditem": 1,
+        "quantity": 3,
+        "price": 23.0,
+        "amount": 69.0,
+        "created_at": "2022-09-12T08:18:07.401Z",
+        "updated_at": "2022-09-12T08:18:07.402Z"
+    }
+},
+{
+    "model": "orders.orderedfood",
+    "pk": 4,
+    "fields": {
+        "order": 8,
+        "payment": 2,
+        "user": 1,
+        "fooditem": 2,
+        "quantity": 2,
+        "price": 60.0,
+        "amount": 120.0,
+        "created_at": "2022-09-12T08:18:07.410Z",
+        "updated_at": "2022-09-12T08:18:07.410Z"
+    }
+},
+{
+    "model": "orders.orderedfood",
+    "pk": 5,
+    "fields": {
+        "order": 10,
+        "payment": 3,
+        "user": 1,
+        "fooditem": 1,
+        "quantity": 3,
+        "price": 23.0,
+        "amount": 69.0,
+        "created_at": "2022-09-12T08:19:53.506Z",
+        "updated_at": "2022-09-12T08:19:53.506Z"
+    }
+},
+{
+    "model": "orders.orderedfood",
+    "pk": 6,
+    "fields": {
+        "order": 10,
+        "payment": 3,
+        "user": 1,
+        "fooditem": 2,
+        "quantity": 2,
+        "price": 60.0,
+        "amount": 120.0,
+        "created_at": "2022-09-12T08:19:53.512Z",
+        "updated_at": "2022-09-12T08:19:53.512Z"
+    }
+},
+{
+    "model": "orders.orderedfood",
+    "pk": 7,
+    "fields": {
+        "order": 12,
+        "payment": 4,
+        "user": 1,
+        "fooditem": 1,
+        "quantity": 3,
+        "price": 23.0,
+        "amount": 69.0,
+        "created_at": "2022-09-12T08:23:09.821Z",
+        "updated_at": "2022-09-12T08:23:09.821Z"
+    }
+},
+{
+    "model": "orders.orderedfood",
+    "pk": 8,
+    "fields": {
+        "order": 12,
+        "payment": 4,
+        "user": 1,
+        "fooditem": 2,
+        "quantity": 2,
+        "price": 60.0,
+        "amount": 120.0,
+        "created_at": "2022-09-12T08:23:09.826Z",
+        "updated_at": "2022-09-12T08:23:09.826Z"
+    }
+},
+{
+    "model": "orders.orderedfood",
+    "pk": 9,
+    "fields": {
+        "order": 13,
+        "payment": 5,
+        "user": 1,
+        "fooditem": 1,
+        "quantity": 3,
+        "price": 23.0,
+        "amount": 69.0,
+        "created_at": "2022-09-12T08:41:28.435Z",
+        "updated_at": "2022-09-12T08:41:28.436Z"
+    }
+},
+{
+    "model": "orders.orderedfood",
+    "pk": 10,
+    "fields": {
+        "order": 13,
+        "payment": 5,
+        "user": 1,
+        "fooditem": 2,
+        "quantity": 2,
+        "price": 60.0,
+        "amount": 120.0,
+        "created_at": "2022-09-12T08:41:28.446Z",
+        "updated_at": "2022-09-12T08:41:28.446Z"
+    }
+},
+{
+    "model": "orders.orderedfood",
+    "pk": 11,
+    "fields": {
+        "order": 14,
+        "payment": 6,
+        "user": 1,
+        "fooditem": 1,
+        "quantity": 3,
+        "price": 23.0,
+        "amount": 69.0,
+        "created_at": "2022-09-12T08:46:39.761Z",
+        "updated_at": "2022-09-12T08:46:39.761Z"
+    }
+},
+{
+    "model": "orders.orderedfood",
+    "pk": 12,
+    "fields": {
+        "order": 14,
+        "payment": 6,
+        "user": 1,
+        "fooditem": 2,
+        "quantity": 2,
+        "price": 60.0,
+        "amount": 120.0,
+        "created_at": "2022-09-12T08:46:39.766Z",
+        "updated_at": "2022-09-12T08:46:39.766Z"
+    }
+},
+{
+    "model": "orders.orderedfood",
+    "pk": 13,
+    "fields": {
+        "order": 15,
+        "payment": 7,
+        "user": 1,
+        "fooditem": 1,
+        "quantity": 3,
+        "price": 23.0,
+        "amount": 69.0,
+        "created_at": "2022-09-12T08:56:46.479Z",
+        "updated_at": "2022-09-12T08:56:46.479Z"
+    }
+},
+{
+    "model": "orders.orderedfood",
+    "pk": 14,
+    "fields": {
+        "order": 15,
+        "payment": 7,
+        "user": 1,
+        "fooditem": 2,
+        "quantity": 2,
+        "price": 60.0,
+        "amount": 120.0,
+        "created_at": "2022-09-12T08:56:46.484Z",
+        "updated_at": "2022-09-12T08:56:46.484Z"
+    }
+},
+{
+    "model": "orders.orderedfood",
+    "pk": 15,
+    "fields": {
+        "order": 16,
+        "payment": 8,
+        "user": 1,
+        "fooditem": 1,
+        "quantity": 3,
+        "price": 23.0,
+        "amount": 69.0,
+        "created_at": "2022-09-12T09:05:51.507Z",
+        "updated_at": "2022-09-12T09:05:51.507Z"
+    }
+},
+{
+    "model": "orders.orderedfood",
+    "pk": 16,
+    "fields": {
+        "order": 16,
+        "payment": 8,
+        "user": 1,
+        "fooditem": 2,
+        "quantity": 2,
+        "price": 60.0,
+        "amount": 120.0,
+        "created_at": "2022-09-12T09:05:51.514Z",
+        "updated_at": "2022-09-12T09:05:51.514Z"
+    }
+},
+{
+    "model": "orders.orderedfood",
+    "pk": 17,
+    "fields": {
+        "order": 18,
+        "payment": 9,
+        "user": 1,
+        "fooditem": 1,
+        "quantity": 3,
+        "price": 23.0,
+        "amount": 69.0,
+        "created_at": "2022-09-12T10:59:26.367Z",
+        "updated_at": "2022-09-12T10:59:26.367Z"
+    }
+},
+{
+    "model": "orders.orderedfood",
+    "pk": 18,
+    "fields": {
+        "order": 19,
+        "payment": 10,
+        "user": 1,
+        "fooditem": 1,
+        "quantity": 1,
+        "price": 23.0,
+        "amount": 23.0,
+        "created_at": "2022-09-13T02:03:28.278Z",
+        "updated_at": "2022-09-13T02:03:28.278Z"
+    }
+},
+{
+    "model": "orders.orderedfood",
+    "pk": 19,
+    "fields": {
+        "order": 24,
+        "payment": 11,
+        "user": 1,
+        "fooditem": 1,
+        "quantity": 1,
+        "price": 23.0,
+        "amount": 23.0,
+        "created_at": "2022-09-13T11:12:30.732Z",
+        "updated_at": "2022-09-13T11:12:30.732Z"
+    }
+},
+{
+    "model": "orders.orderedfood",
+    "pk": 20,
+    "fields": {
+        "order": 24,
+        "payment": 11,
+        "user": 1,
+        "fooditem": 2,
+        "quantity": 1,
+        "price": 60.0,
+        "amount": 60.0,
+        "created_at": "2022-09-13T11:12:30.744Z",
+        "updated_at": "2022-09-13T11:12:30.744Z"
+    }
+},
+{
+    "model": "orders.orderedfood",
+    "pk": 21,
+    "fields": {
+        "order": 24,
+        "payment": 11,
+        "user": 1,
+        "fooditem": 6,
+        "quantity": 1,
+        "price": 60.0,
+        "amount": 60.0,
+        "created_at": "2022-09-13T11:12:30.749Z",
+        "updated_at": "2022-09-13T11:12:30.749Z"
+    }
+},
+{
+    "model": "orders.orderedfood",
+    "pk": 22,
+    "fields": {
+        "order": 26,
+        "payment": 12,
+        "user": 1,
+        "fooditem": 2,
+        "quantity": 1,
+        "price": 60.0,
+        "amount": 60.0,
+        "created_at": "2022-10-31T08:05:39.016Z",
+        "updated_at": "2022-10-31T08:05:39.016Z"
+    }
+},
+{
+    "model": "orders.orderedfood",
+    "pk": 23,
+    "fields": {
+        "order": 26,
+        "payment": 12,
+        "user": 1,
+        "fooditem": 4,
+        "quantity": 2,
+        "price": 200.0,
+        "amount": 400.0,
+        "created_at": "2022-10-31T08:05:39.093Z",
+        "updated_at": "2022-10-31T08:05:39.093Z"
+    }
+},
+{
+    "model": "orders.orderedfood",
+    "pk": 24,
+    "fields": {
+        "order": 26,
+        "payment": 12,
+        "user": 1,
+        "fooditem": 1,
+        "quantity": 1,
+        "price": 23.0,
+        "amount": 23.0,
+        "created_at": "2022-10-31T08:05:39.097Z",
+        "updated_at": "2022-10-31T08:05:39.097Z"
+    }
+}
+]
