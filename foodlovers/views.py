@@ -10,11 +10,12 @@ from django.contrib.gis.db.models.functions import Distance
 
 #GET THE LATITUDE AND LONGITUDE FROM SESSION
 def get_or_set_current_location(request):
-    if 'lat' in request.session:
+    if 'lat' and 'lng' in request.session:
         lat = request.session['lat']
         lng = request.session['lng']
+        print(request.session['lat'], request.session['lng'])
         return lng, lat
-    elif 'lat' in request.GET:
+    elif 'lat' and 'lng' in request.GET:
         lat = request.GET.get('lat')
         lng = request.GET.get('lng')
         request.session['lat'] = lat
@@ -26,9 +27,10 @@ def get_or_set_current_location(request):
 
 def home(request):
     popularvendors= Vendor.objects.filter(is_featured=True)
+    print('hello')
     print(get_or_set_current_location(request))
     if get_or_set_current_location(request) is not None:
-
+        print("hello")
         pnt = GEOSGeometry('POINT(%s %s)' % (get_or_set_current_location(request)))
         print('pnt:', pnt)
         vendors = Vendor.objects.filter(user_profile__location__distance_lte=(pnt, D(km=1000))).annotate(distance=Distance("user_profile__location", pnt)).order_by("distance")

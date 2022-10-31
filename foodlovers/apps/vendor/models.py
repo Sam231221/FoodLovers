@@ -1,4 +1,5 @@
 from enum import unique
+from pyexpat import model
 from django.db import models
 from foodlovers.apps.accounts.models import User, UserProfile
 from foodlovers.apps.accounts.utils import send_notification
