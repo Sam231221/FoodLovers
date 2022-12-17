@@ -27,7 +27,7 @@
 							<div class="row">
 								<div class="col-lg-4 col-md-4 col-sm-3 col-xs-12">
 									<div class="field-holder">
-										<input type="text" name="keyword" placeholder="Resturant name or food name">
+										<input type="text" name="keyword" placeholder="Resturant name or food name" required>
 									</div>
 								</div>
 								<div class="col-lg-4 col-md-4 col-sm-5 col-xs-12">
@@ -38,8 +38,8 @@
 													<span class="foodbakery-search-location-icon"><i class="icon-location"></i></span>
 													
 													<input type="text" name="address" class="location-field-text filter" id="id_address" required placeholder="All Locations">
-													<input type="hidden" name="lat" value="" id="id_latitude">
-													<input type="hidden" name="lng" value="" id="id_longitude">
+													<input type="hidden" name="lat" value={{lat}} id="id_latitude">
+													<input type="hidden" name="lng" value={{lng}} id="id_longitude">
 												</div>
 												
 											</li>

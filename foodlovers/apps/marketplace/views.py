@@ -69,7 +69,7 @@ def search(request):
         address = request.GET['address']
         radius = request.GET['radius']
         keyword = request.GET['keyword']
-        print(latitude, longitude, address, radius, keyword)
+        print('sdfsdf:',latitude, longitude, address, radius, keyword)
 
         # get vendor ids that has the food item the user is looking for
         fetch_vendors_by_fooditems = FoodItem.objects.filter(food_title__icontains=keyword, is_available=True).values_list('vendor', flat=True)
@@ -77,15 +77,17 @@ def search(request):
         vendors = Vendor.objects.filter(Q(id__in=fetch_vendors_by_fooditems) | Q(vendor_name__icontains=keyword, is_approved=True, user__is_active=True))
         if latitude and longitude and radius:
             pnt = GEOSGeometry('POINT(%s %s)' % (longitude, latitude))
+            print('user point:',pnt)
 
-            vendors = Vendor.objects.filter(Q(id__in=fetch_vendors_by_fooditems) |
-             Q(vendor_name__icontains=keyword, is_approved=True, user__is_active=True),
-              user_profile_address_icontains = address,
+            vendors = Vendor.objects.filter(Q(id__in=fetch_vendors_by_fooditems) | Q(vendor_name__icontains=keyword, is_approved=True, user__is_active=True),
+              user_profile__address__icontains = address,
+              #vendor's longitude and latitude must be less or equal to user location
               user_profile__location__distance_lte=(pnt, D(km=radius))
             ).annotate(distance=Distance("user_profile__location", pnt)).order_by("distance")
 
             for v in vendors:
                 v.kms = round(v.distance.km, 1)
+            print(vendors)    
         vendor_count = vendors.count()
         context = {
             'vendors': vendors,

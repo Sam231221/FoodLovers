@@ -12,6 +12,8 @@ class CustomUserAdmin(UserAdmin):
     fieldsets = ()
 
 
+class CustomUserProfileAdmin(admin.ModelAdmin):
+    list_display = ('user', 'address', 'country' ,'state', 'city')
 
 admin.site.register(User, CustomUserAdmin)
-admin.site.register(UserProfile)
+admin.site.register(UserProfile, CustomUserProfileAdmin)

@@ -94,8 +94,6 @@ jQuery(document).ready(function () {
     /*
      * wordpres default pagination
      */
-
-
     function automobile_inv_elem_view_change(type_slug) {
 
         if (type_slug == 'icon') {

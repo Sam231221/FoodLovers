@@ -121,27 +121,19 @@
 		}
 		
 		function showPosition(position) {
-			fetch("https://ipinfo.io/json?token=3fddc8a6612ac2").then(
+			fetch("https://api.ipify.org?format=json").then(
 				(response) => response.json()
-			).then(
-				//(jsonResponse) => console.log(jsonResponse.ip, jsonResponse.country)
-				(jsonResponse) => {
-					console.log(jsonResponse)
-					console.log(jsonResponse.loc)
-					let loc=jsonResponse.loc
-					const location = loc.split(",")
-					//string
-					let lat = location[0]
-					let long = location[1]
-					console.log(lat, long)
-	
-					locationElement.value = jsonResponse.city
-					sessionStorage.setItem("current_location", jsonResponse.city)
-					sessionStorage.setItem("lat", lat)
-					sessionStorage.setItem("lng", long)
-
-					window.location = '?lng='+long+'&lat='+lat
-			  
+			).then((jsonResponse) => {
+					console.log(jsonResponse['ip'])
+					fetch("http://ip-api.com/json/"+jsonResponse['ip']).then(
+						(response) => response.json()
+			        ).then(	(jsonResponse) => {
+						console.log(jsonResponse)
+						sessionStorage.setItem("current_location", jsonResponse.city)
+						sessionStorage.setItem("lat", jsonResponse.lat)
+						sessionStorage.setItem("lng", jsonResponse.lon)
+						window.location = '?lng='+jsonResponse.lon+'&lat='+jsonResponse.lat
+					})
 				}
 			)
 	
