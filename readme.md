@@ -1,4 +1,4 @@
-# Installing gdal in virtual environment.
+# Installing gdal in the virtual environment.
 You need to download gdal from this link: https://www.lfd.uci.edu/~gohlke/pythonlibs/#gdal.
 After downloading it, put it in your working directory of your django project.
 Then run the command
